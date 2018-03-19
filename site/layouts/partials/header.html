@@ -1,10 +1,20 @@
-<!doctype html>
-<html lang="{{ $.Site.Language.Lang }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-    <title>{{ $.Site.Title }}</title>
-    <link rel="stylesheet" href="css/main.css"/>
-  </head>
-  <body>
+<header class="header">
+    {{ partial "svgdefs" . }} 
+  <div class="menu-button-c">
+    <div class="menu-button"><span></span></div>
+  </div>
+  <div class="branding">
+    <div class="branding-logo">
+      <a href="/" class="logo">
+        <!-- <img src="/images/centurion-logo.svg" alt=""> -->
+        <svg><use xlink:href="#mayows-logo" /></svg>
+      </a> 
+    </div>
+    <div class="branding-text">
+
+      <h1 class="branding-name">{{ if .IsPage}}<span class="page-title">{{ .Title }}</span>{{end}}<span class="site-title">{{ .Site.Title}}</span></h1>
+
+    </div>   
+  </div>
+  {{ partial "menu" . }}  
+</header>

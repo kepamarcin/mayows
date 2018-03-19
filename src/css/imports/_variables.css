@@ -1,0 +1,82 @@
+:root{
+/*
+ * COLORS
+ */
+  --white:#ffffff;
+  --black:#000000;
+
+  --yellow:#ffca05;
+  --dark:#231f20;
+
+  --body-background:color(var(--dark) lightness(90%));
+
+  --color-nav-link:var(--yellow);
+
+/*
+ * FONTS
+ */
+  --font-system:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --font-serif: "pt serif";
+  --font-serif-optimized: "pt serif opt";
+  --font-sans: "open sans";
+  --font-weight-normal:400;
+  --font-weight-medium:700;
+  --font-weight-bold:900;
+  --font-size-base: 1.125em;
+  /* --font-size-base: 1em; */
+/*
+ * BOX SHADOW
+ */
+  --box-shadow: 0 0 10px color(var(--dark) alpha(90%));
+
+/*
+ * MEDIA QUERIES
+ */
+
+  @custom-media --viewport-small (width >= 576px);
+  @custom-media --viewport-medium (width >= 768px);
+  @custom-media --viewport-large (width >= 992px);
+  @custom-media --viewport-xlarge (width >= 1200px);
+
+/*
+ * HEADINGS CUSTOM SELECTOR
+ */
+  @custom-selector :--headings h1,h2,h3,h4,h5,h6;
+
+/*
+ * STRIPE BORDER
+ */
+  --stripe-border: {
+    position: absolute;
+    content:"";
+    width:100%;
+    height: 0;
+    border:0;
+    border-style: solid;
+    border-image: repeating-linear-gradient(-45deg, var(--yellow) 0px, var(--yellow) 20px, var(--dark) 20px, var(--dark) 40px);
+    border-image-repeat: repeat;
+    border-image-slice: 4;
+  };
+  --stripe-border-alt: {
+    position: absolute;
+    content:"";
+    width:100%;
+    height: 0;
+    border:0;
+    border-style: solid;
+    border-image: repeating-linear-gradient(-45deg, var(--yellow) 0px, var(--yellow) 20px, var(--dark) 20px, var(--dark) 40px);
+    border-image-repeat: repeat;
+    border-image-slice: 4;
+  };
+  --stripe-border-left: --stripe-border;
+/*
+ * MARGINS & PADDINGS
+ */
+  /* Unit for calculations = font base size */
+  --unit: var(--font-size-base);
+
+  --margin-small: var(--unit);
+  --margin-large: calc(var(--unit) *2.5 );
+  --padding-small: var(--unit);
+  --padding-large: calc(var(--unit) *2 );
+}

@@ -1,0 +1,15 @@
+{{- if .Site.Menus.main }}
+<nav class="menu" >
+	<ul>
+		{{- $currentNode := . }}
+		{{- range sort .Site.Menus.main }}
+		{{- if .Name}}
+		<li>
+			<a {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}class="is-active"{{end}} href="{{ .URL }}">{{ .Name  }}</a></li>
+		{{- end }}
+		{{- end }}
+	</ul>
+</nav>
+{{ else -}}
+<hr>
+{{- end }}

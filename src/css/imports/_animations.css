@@ -1,0 +1,35 @@
+@keyframes pop{
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-150%) scale(.5);
+  }
+  
+  100%{
+    /* background-color: var(--white); */
+    transform:translateY(0);
+  }
+}
+@keyframes ring {
+  10%,20%,30%, 40%, 50%, 60%, 70%, 80%{
+    transform:rotate(10deg) scale(1);
+  }
+  15%,25%,35%, 45%, 55%, 65%, 75%,85%{
+    transform:rotate(-10deg) scale(1.1);
+  }
+}
+@keyframes pulse {
+  0%{
+    transform:scale(.5), translateY(-50%);
+  }
+  50%{
+    transform:scale(.8), translateY(-50%);
+    opacity:.7;
+  }
+  100%{
+    transform:scale(1), translateY(-50%);
+    opacity:.5;
+  }
+}

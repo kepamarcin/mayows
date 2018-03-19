@@ -1,0 +1,70 @@
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else if isset .Params "description" }}{{ .Params.description }}{{ else }}{{ delimit .PlainWords " " | truncate 250}}{{ end }}"/>
+    <meta name="robots" content="index,follow"/>
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- OG data -->
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
+    <meta content="{{ .Title }}" property="og:title">
+    <meta content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else if isset .Params "description" }}{{ .Params.description }}{{ else }}{{ delimit .PlainWords " " | truncate 150}}{{ end }}" property="og:description">
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    {{ if .IsHome }}
+    <meta property="og:image" content="https://www.biurocenturion.pl/images/main.jpg" />
+    {{ end}}
+    {{ if .IsPage }}
+    <meta property="og:image" content="https://www.biurocenturion.pl/{{ .Params.image }}" />
+    {{ end }}
+    <!-- JSON-LD -->
+
+        <script type="application/ld+json">
+        
+        { 
+          "@context": "http://schema.org", 
+          "@type": "WebSite", 
+          "url": "{{ .Permalink }}", 
+          "name": "{{ .Title }}",
+
+          "description": "{{ if .IsHome }}{{ .Site.Params.description }}{{ else if isset .Params "description" }}{{ .Params.description }}{{ else }}{{ delimit .PlainWords " " | truncate 250}}{{ end }}"
+        }
+        </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://www.schema.org",
+      "@type": "LocalBusiness",
+      "name": "{{ .Site.Title }}",
+      "url": "https://www.biurocenturion.pl",
+      "logo": "https://www.biurocenturion.pl/images/centurion.png",
+      "image": "https://www.biurocenturion.pl/images/main.jpg",
+      "description": "{{ .Site.Params.description }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul.Leśna 17 D / 2",
+        "addressLocality": "Jabłonna",
+        "addressRegion": "Mazovian",
+        "postalCode": "05-110",
+        "addressCountry": "PL"
+      },
+      "telephone": ["+48 888 766 366", "+48 510 450 576"],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "52.377145",
+        "longitude": "20.942575"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+  </script>

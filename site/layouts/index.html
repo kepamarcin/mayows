@@ -1,9 +1,18 @@
-{{ partial "header" . }}
+{{ define "head"}}
+  {{ partial "head/head.html" . }}
+{{ end }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+{{ define "header"}}
+  {{ partial "header" .}}
+{{ end }}
+
+{{ define "main" }}
 
 <p>
   Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
 </p>
+{{ end }}
 
-{{ partial "footer" . }}
+{{ define "footer"}}
+  {{ partial "footer" .}}
+{{ end }}

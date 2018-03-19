@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl-PL">
+
+  {{ block "head" . }}
+
+  {{ end }}
+  <body class="{{ if .IsPage  }}page{{end}}">
+    <div class="wrapper">
+      {{ block "header" . }}
+
+      {{ end }}
+
+      {{ block "main" . }}
+      
+      {{ end }}
+
+      {{ block "footer" . }}
+      
+      {{ end }}
+
+    </div>
+
+    <script async src="app.js"></script>
+  </body>
+  </html>

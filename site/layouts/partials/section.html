@@ -1,0 +1,14 @@
+<section class="section border-stripe border-stripe-top">
+  <h3 class="screen-reader" style="display:none"> Ważne artykuły</h3>
+  {{ range .Site.Pages }}
+  {{- if .Params.imagethb }}
+  <figure>
+    <a href="{{ .URL}}">
+      <img class="lazy" data-src="{{ .Params.imagethb }}" alt="" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="300" height="200" alt="{{ .Title }}" title="{{ .Title }}">
+      <span>{{ .Title }}</span>
+  </a>
+  </figure>
+   
+  {{- end }}
+  {{- end }}
+</section> 
