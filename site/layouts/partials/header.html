@@ -1,20 +1,35 @@
-<header class="header">
+<header class="v-header container header">
     {{ partial "svgdefs" . }} 
-  <div class="menu-button-c">
-    <div class="menu-button"><span></span></div>
-  </div>
-  <div class="branding">
+  
+  <div class="branding-top">
     <div class="branding-logo">
       <a href="/" class="logo">
-        <!-- <img src="/images/centurion-logo.svg" alt=""> -->
         <svg><use xlink:href="#mayows-logo" /></svg>
       </a> 
     </div>
-    <div class="branding-text">
-
-      <h1 class="branding-name">{{ if .IsPage}}<span class="page-title">{{ .Title }}</span>{{end}}<span class="site-title">{{ .Site.Title}}</span></h1>
-
-    </div>   
+    <div class="menu-button-c">
+      <div class="menu-button"><span></span></div>
+    </div>
+    <nav class="menu-container">
+      <ul>
+        <li><a href="" class="is-active">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Solutions</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Contact</a></li>
+      </ul> 
+    </nav>
   </div>
-  {{ partial "menu" . }}  
+  <div class="fullscreen-video-wrap" id="videoWrap">
+    
+
+    <div class="image-wrapper"></div>
+  </div>
+  <div class="header-overlay"></div>
+  <div class="header-content">
+    <h1>Water solutions</h1>
+    <p>We are innovation</p>
+    <a href="" class="btn">Meet our products</a>
+  </div>
+  {{ partial "menu" . }} 
 </header>

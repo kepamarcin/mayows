@@ -1,120 +1,165 @@
-.page{
-  & .header{
-    margin:calc(var(--margin-small)/2);
-
-    @media (--viewport-medium){
-    margin:0 var(--margin-large);
-    text-align: left;
-    }
-  }
-
-  & .branding{
-    height:auto;
-    @media (--viewport-medium){
-      margin-bottom:0;
-    }
-    &-logo{
-      margin: 0 0 calc(var(--margin-small)*1.44) 0;
-    }
-    & svg{
-      width: 70px;
-      height: 70px;
-      @media (--viewport-medium){
-        width: 170px;
-        height: 170px;
-        vertical-align: middle;
-      }
-    }
-    &-text{
-      margin: 0 0 calc(var(--margin-small)*1.44) 0;
-      @media (--viewport-medium){
-      margin:auto 0 auto var(--margin-large); 
-      text-align: left;
-    }
-    }
-  }
-  & .site-title{
-    display: block;
-    font-size:calc(var(--unit)/ calc(1.44*1.2));
-  }
+/*logo fill*/
+.cls-1, .cls-2{
+  fill:var(--blue) !important;
 }
-.header{
-  margin:var(--margin-large) var(--margin-small) 0;
-  @media (--viewport-medium){
-      margin:0 var(--margin-large);
-      text-align: left;
-    }
-}
-.branding{
-  margin:0;
+.branding-top{
+  margin-top:var(--unit);
   display: flex;
-  flex-direction: column;
-  height:100vh;
+  z-index: 3;
   @media (--viewport-medium){
-    flex-direction: row;
-    height: auto;
-    margin:var(--margin-large) 0 var(--margin-small);
-    margin-bottom:1.65em;
-  }
-  &-logo{
-    margin:auto;
-    @media (--viewport-medium){
-      margin:0;
-    }
-   & svg{
-      width:170px;
-      height: 170px;
-      @media (--viewport-medium){
-        width: 170px;
-        height: 170px;
-        vertical-align: middle;
-      }
-    }
-  }
-  &-text{
-    margin-bottom:auto;
-    text-align: center;
-    @media (--viewport-medium){
-      margin:auto 0 auto var(--margin-large); 
-      text-align: left;
-    }
-  }
-  & h1{
-    margin: 0;
-  }
-  &-name{
-    font-size:2.0736em;
-    
-    /* font-family: var(--font-serif); */
-    font-weight: var(--font-weight-bold);
-    margin: 0;
-    @media (--viewport-medium){
-      font-size:2.4888em; 
-    }
+    /* height: 60px; */
   }
 }
-.menu-button-c{
-  top:18px;
-  right:18px;
-  position: fixed;
-  z-index: 11;
-}
-.menu-text{
+.logo{
   display: inline-block;
-  vertical-align:middle;
-  text-transform:uppercase;
-  font-size:14px;
-  top:0;
+}
+
+.image-wrapper{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/water-wave720.jpeg");
+  background-size:cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  @media (--viewport-large){
+    display: none;
+  }
+}
+.v-header{
+  height:100vh;
+  display: flex;
+  flex-direction:column;
+}
+
+.fullscreen-video-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.fullscreen-video-wrap video{
+  min-width: 100%;
+  min-height: 100%;
+}
+.header-overlay{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: rgba(255,255,255,.45); */
+  background: linear-gradient(to top, rgba(255,255,255,.9) 0%, rgba(255,255,255,.8) 30%, rgba(255,255,255,0) 100%);
+  z-index:1;
+  @media (--viewport-large){
+    display: none;
+  }
+}
+.header-content{
+  color:var(--dark);
+  z-index:2;
+  /* margin: auto 0; */
+  margin-top: auto;
+  @media (--viewport-large){
+    margin-bottom: 6em;
+  }
+  @media (--viewport-xlarge){
+    margin: auto 0;
+    /* padding-bottom: 8em; */
+  }
+  & h1 {
+    font-size: calc(2.488em*1.44);
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -.069em;
+    line-height: 1;
+    @media (--viewport-large){
+      font-weight: 400;
+      font-size: calc(2.488/1.44*2.488em);
+    }
+    @media (--viewport-xlarge){
+      font-weight: 400;
+      font-size: calc(2.488/1.2*2.488em);
+    }
+  }
+  & p {
+    font-size: calc(1.44*1.2em);
+    font-style: italic;
+    margin:.2em 0;
+    @media (--viewport-xlarge){
+      font-size: calc(2.488*1em);
+      margin:.18em 0;
+    }
+  }
+  & a{
+    /* margin-top: 1em; */
+    display: inline-block;
+    border:  1px solid color(var(--dark) alpha(70%));
+    padding: .6944em;
+    border-radius: 5px;
+    color: var(--dark);
+    background: color(rgb(226, 240, 247) alpha(60%));
+    text-transform: uppercase;
+    /* font-size:.8333em; */
+    margin:1em 0;
+    @media (--viewport-large){
+      font-size:.8333em;
+      margin-top:0;
+      font-weight: 600;
+    }
+  }
+}
+
+.logo svg{
+  width: 100px;
+  height: 40px;
+  @media (--viewport-medium){
+    width: 150px;
+    height: 60px;
+    z-index: 2;
+  }
+  
+}
+.media-wrapper{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width:100%;
+  & .image-background{
+    background:url("../images/water-wave-min.jpg");
+    background-position: center center;
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+.menu-button-c{
+  top:var(--unit);
+  right:var(--unit);
+  position: fixed;
+  z-index: 101;
+  
 }
 .menu-button{
+  cursor: pointer;
   display: inline-block;
-  width:60px;
-  height: 60px;
+  width:64px;
+  height: 35px;
   position: relative;
-  background-color: var(--yellow);
-  border:0;
-  border-radius:50%;
-  color: var(--dark);
+  background-color: color(var(--blue) alpha(30%));
   font-weight: var(--font-weight-bold);
   transition: background-color .5s linear, transform 3s linear .1s;
   overflow: hidden;
@@ -127,7 +172,7 @@
     top: 50%;
     margin-left: -15px;
     margin-top:0;
-    background-color: var(--dark);
+    background-color: var(--white);
     transition:all .5s ease-out .2s;
   }
   &::before{
@@ -139,7 +184,7 @@
     top: 50%;
     margin-left: -15px;
     margin-top:-6px;
-    background-color: var(--dark);
+    background-color: var(--white);
     transition:all .2s ease-out .4s;
   }
   &::after{
@@ -152,7 +197,7 @@
     top: 50%;
     margin-left: -15px;
     margin-top:6px;
-    background-color: var(--dark);
+    background-color: var(--white);
     transition:all .2s ease-out .35s;
   }
   &.bgchanged{
@@ -167,7 +212,7 @@
 .header{
   &.menu-open{
     & .menu-button{
-      background-color:var(--white);
+      background-color:transparent;
       &::before{
         content:"";
         margin-top:0;

@@ -1,0 +1,90 @@
+pt serif optimized
+/* @font-face {
+  font-family: 'pt serif opt';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ptb-opt.woff2') format('woff2');
+} */
+/* Lingua Franca - latin_latin-ext */
+@font-face {
+  font-family: 'Lingua Franca';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lingua Franca'),
+       url('../fonts/LinguaFranca-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/LinguaFranca-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Lingua Franca 700 - latin_latin-ext */
+@font-face {
+  font-family: 'Lingua Franca';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lingua Franca'), local('PTSerif-Bold'),
+       url('../fonts/LinguaFranca-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/LinguaFranca-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Autor - latin */
+@font-face {
+  font-family: 'Autor';
+  font-style: normal;
+  font-weight: 200;
+  src: 
+       url('../fonts/Autor.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Autor-thin.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Autor';
+  font-style: normal;
+  font-weight: 300;
+  src: 
+       url('../fonts/Autor.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Autor-light.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Autor';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+       url('../fonts/Autor.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Autor-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Autor';
+  font-style: normal;
+  font-weight: 500;
+  src: 
+       url('../fonts/Autor.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Autor-medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Autor';
+  font-style: normal;
+  font-weight: 700;
+  src: 
+       url('../fonts/Autor.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Autor-bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Autor';
+  font-style: normal;
+  font-weight: 800;
+  src: 
+       url('../fonts/Autor.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Autor-ExtraBold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Autor';
+  font-style: normal;
+  font-weight: 900;
+  src: 
+       url('../fonts/Autor.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Autor-black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Autor';
+  font-style: normal;
+  font-weight: 300;
+  src: 
+       url('../fonts/Autor.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Autor-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

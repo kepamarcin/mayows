@@ -7,12 +7,36 @@
 {{ end }}
 
 {{ define "main" }}
-
+<h3>This is our big fat head.</h3>
 <p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus 0quo tempore veritatis, illo tempora velit porro tenetur rem unde veniam debitis iure, dicta beatae autem? Odio modi in nesciunt.
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus quo tempore veritatis, illo tempora velit porro tenetur rem unde veniam debitis iure, dicta beatae autem? Odio modi in nesciunt.
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus quo tempore veritatis, illo tempora velit porro tenetur rem unde veniam debitis iure, dicta beatae autem? Odio modi in nesciunt.
 </p>
+<p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus quo tempore veritatis, illo tempora velit porro tenetur rem unde veniam debitis iure, dicta beatae autem? Odio modi in nesciunt.
+  </p>
 {{ end }}
 
 {{ define "footer"}}
   {{ partial "footer" .}}
+  <script>
+    let width = window.innerWidth;
+    function loadVideo(width){
+      let node = document.getElementById("videoWrap");
+      let video = document.createElement('video');
+      video.poster = "images/water-wave-min.jpg";
+      video.src = "video/wave"+width+".mp4";
+      video.autoplay = true;
+      video.muted = true;
+      video.loop = true;
+      video.setAttribute("playsinline", "");
+      node.appendChild(video);
+    }
+    if( width >= 992 && width <= 1400){
+      loadVideo(720);
+    } else if( width > 1400){
+      loadVideo("");
+    }
+  </script>
 {{ end }}
