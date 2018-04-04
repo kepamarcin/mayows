@@ -7,7 +7,8 @@ body{
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
   /* background: var(--body-background); */
-  background: color(var(--dark) lightness(90%));
+  /* background: color(var(--dark) lightness(90%)); */
+  background: #fff;
   color: var(--dark);
   line-height: 1.5;
   
@@ -44,20 +45,20 @@ p{
   }
 }
 .big-text{font-size: 6.2em} 
-h1 {font-size:var(--m4)}
-h2 {font-size:var(--m3)}
-h3 {font-size:var(--m2)}
-h4 {font-size:var(--m)}
-small{font-size: calc(var(--unit)/var(--m))}
+h1 {font-size:var(--m4)em}
+h2 {font-size:var(--m3)em}
+h3 {font-size:var(--m2)em}
+h4 {font-size:var(--m)em}
+small{font-size: calc(var(--unit)/var(--m))em}
 p:not(.branding-name){
   margin: 0 0 1.3em 0;
 }
 a{ 
   /* color:var(--color-nav-link); */
   text-decoration:none;
-  &:hover{
+  /* &:hover{
     color:color(var(--color-nav-link) blackness(+50%));
-  }
+  } */
 }
 .container{
   max-width: 68em;
@@ -103,5 +104,13 @@ img{
     background: radial-gradient(at 50% 0, rgba(0,0,0,0.2), transparent 70%);
     background-size: 100% 10px;
     background-repeat: no-repeat;
+  }
+}
+.icon{
+  margin-right:6px;
+  &.icon-drop svg{
+    /* display: block; */
+    width: var(--unit);
+    height: var(--unit);
   }
 }

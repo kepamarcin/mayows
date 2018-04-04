@@ -6,11 +6,14 @@
 @import "imports/_fontface.css";
 @import "imports/_base.css";
 @import "imports/_normalize.css"; 
+
 @import "imports/_header.css";
 @import "imports/_menu.css";
+@import "imports/_home-page.css";
 
 @import "imports/_page.css";
 @import "imports/_aside.css";
+@import "imports/_footer.css";
 @import "imports/_animations.css";
 
 

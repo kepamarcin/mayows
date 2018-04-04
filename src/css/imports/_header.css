@@ -1,11 +1,11 @@
 /*logo fill*/
-.cls-1, .cls-2{
+#logo .cls-1, #logo.cls-2{
   fill:var(--blue) !important;
 }
 .branding-top{
   margin-top:var(--unit);
   display: flex;
-  z-index: 3;
+  z-index: 6;
   @media (--viewport-medium){
     /* height: 60px; */
   }
@@ -49,18 +49,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* background: rgba(255,255,255,.45); */
   background: linear-gradient(to top, rgba(255,255,255,.9) 0%, rgba(255,255,255,.8) 30%, rgba(255,255,255,0) 100%);
   z-index:1;
   @media (--viewport-large){
-    display: none;
+    /* display: none; */
   }
 }
 .header-content{
   color:var(--dark);
-  z-index:2;
-  /* margin: auto 0; */
+  z-index:5;
   margin-top: auto;
+  text-align:center;
   @media (--viewport-large){
     margin-bottom: 6em;
   }
@@ -71,7 +70,7 @@
   & h1 {
     font-size: calc(2.488em*1.44);
     margin: 0;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: -.069em;
     line-height: 1;
@@ -80,7 +79,7 @@
       font-size: calc(2.488/1.44*2.488em);
     }
     @media (--viewport-xlarge){
-      font-weight: 400;
+      font-weight: 300;
       font-size: calc(2.488/1.2*2.488em);
     }
   }
@@ -100,9 +99,9 @@
     padding: .6944em;
     border-radius: 5px;
     color: var(--dark);
-    background: color(rgb(226, 240, 247) alpha(60%));
+    background: color(rgb(226, 240, 247) alpha(70%));
+    background: linear-gradient( to top, color(var(--dark) alpha(10%)) 0%, transparent 100%);
     text-transform: uppercase;
-    /* font-size:.8333em; */
     margin:1em 0;
     @media (--viewport-large){
       font-size:.8333em;
@@ -157,12 +156,13 @@
   cursor: pointer;
   display: inline-block;
   width:64px;
-  height: 35px;
+  height: 36px;
   position: relative;
   background-color: color(var(--blue) alpha(30%));
   font-weight: var(--font-weight-bold);
   transition: background-color .5s linear, transform 3s linear .1s;
   overflow: hidden;
+  border-radius:10px;
   & span{
     position: absolute;
     content:"";
@@ -174,6 +174,7 @@
     margin-top:0;
     background-color: var(--white);
     transition:all .5s ease-out .2s;
+    transform:translateY(-50%);
   }
   &::before{
     position: absolute;
@@ -186,6 +187,7 @@
     margin-top:-6px;
     background-color: var(--white);
     transition:all .2s ease-out .4s;
+    transform:translateY(-50%);
   }
   &::after{
     content:"";
@@ -199,6 +201,7 @@
     margin-top:6px;
     background-color: var(--white);
     transition:all .2s ease-out .35s;
+    transform:translateY(-50%);
   }
   &.bgchanged{
     background-color: color(var(--white) alpha(70%));

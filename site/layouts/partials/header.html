@@ -1,4 +1,4 @@
-<header class="v-header container header">
+<header class="{{ if .IsHome }}v-header{{ end }} container header">
     {{ partial "svgdefs" . }} 
   
   <div class="branding-top">
@@ -10,26 +10,21 @@
     <div class="menu-button-c">
       <div class="menu-button"><span></span></div>
     </div>
-    <nav class="menu-container">
-      <ul>
-        <li><a href="" class="is-active">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Solutions</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="">Contact</a></li>
-      </ul> 
-    </nav>
-  </div>
-  <div class="fullscreen-video-wrap" id="videoWrap">
+    {{ partial "menu" . }}
     
-
+  </div>
+  {{if .IsHome}}
+  <div class="fullscreen-video-wrap" id="videoWrap">
+     
     <div class="image-wrapper"></div>
   </div>
   <div class="header-overlay"></div>
   <div class="header-content">
+  
     <h1>Water solutions</h1>
     <p>We are innovation</p>
     <a href="" class="btn">Meet our products</a>
+     
   </div>
-  {{ partial "menu" . }} 
+  {{end}} 
 </header>

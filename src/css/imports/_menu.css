@@ -15,31 +15,20 @@
       margin-left: calc(var(--unit)/var(--m2));
     } 
   }
-  /* & a{
-    @media (--viewport-medium){
-      text-transform: uppercase;
-      font-size:calc(var(--unit)*1.0625);
-      font-weight:var(--font-weight-normal);
-      line-height:1.75;
-      color: var(--color-link);
-      letter-spacing: -.015em;
-    }
-  } */
 }
 
 .menu-container{
   visibility:hidden;
   position: fixed;
   top:0;
-  left: -100%;
   left:0;
   width: 100vw;
   height: 100vh;
   z-index: 10;
   background-color:var(--blue);
   display: flex;
-  transform:translateX(-100%);
-  transition: all .25s ease-in 0s;
+  transform:translateY(-100%);
+  transition: all .25s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
   z-index: 100;
 
   @media (--viewport-medium){
@@ -78,7 +67,6 @@
     padding-left:calc(var(--margin-small));
     font-size: calc(var(--unit)*1.44*1.44);
     overflow-y: hidden;
-    /* font-family:var(--font-sans); */
     &:nth-child(2n) a{transition-delay:.32s;}
     &:nth-child(3n) a{transition-delay:.39s;}
     &:nth-child(4n) a{transition-delay:.46s;}
@@ -132,46 +120,11 @@
     right: 0;
     width:100vw;
     height:100vh;
-    transform:translateX(0);
+    transform:translateY(0);
     & a{
       transform: translateY(0);
       visibility: visible;
     }
   }
-  /* @media (--viewport-medium){
-    display: block;
-    visibility: visible;
-    position: relative;
-    transform:translateY(0);
-    width: auto;
-    height: auto;
-    transition:none;
-    background-color: transparent;
-    left:0;
-    display: flex;
-    flex-grow: 1;
-    justify-content:flex-end;
-    align-items: flex-end;
-    & ul {
-      display:flex;
-      flex-direction:row;
-      padding: 0;
-    }
-    & li{
-      font-size: 1em;
-      overflow-y: visible;
-      margin: 0;
-      padding: 0;
-    }
-    & a{
-      visibility: visible; 
-      transform: translateY(0);
-      text-transform: uppercase;
-      font-size:calc(var(--unit)*1.0625);
-      font-weight:var(--font-weight-normal);
-      line-height:1.75;
-      color: var(--color-link);
-      letter-spacing: -.015em;
-    }
-  } */
+
 }

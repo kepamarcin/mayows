@@ -1,0 +1,36 @@
+{{ define "head" }}
+  {{ partial "head" . }}
+{{ end}}
+
+{{ define "header" }}
+  {{ partial "header" . }}
+{{ end}}
+
+{{ define "main" }}
+  <main>
+    {{if .Params.image}}
+    <figure class="main-image">
+        <img src="{{ .Params.image}}x450.jpg"
+        alt="{{ .Title }}"
+        title="{{ .Title }}"
+        srcset="{{ .Params.image}}x450.jpg 450w,
+                {{ .Params.image}}.jpg 1100w"
+        sizes="(max-width: 450px) 450px, 100vw"
+        >
+    </figure>
+    {{ end}}
+    {{if .Params.map }}
+      {{ partial "map" .}}
+    {{end}}
+
+    <article class="main-content">
+        {{.Content}}
+    </article>
+    {{ partial "aside" . }}
+    {{ partial "section" . }} 
+  </main>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "footer" . }}
+{{ end}}
