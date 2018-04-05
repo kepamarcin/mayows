@@ -226,10 +226,10 @@
     margin-top: 3.5em;
     grid-area:line;
     display: grid;
-    grid-template-columns: 50px 12px 50px;
+    grid-template-columns: 50px auto 50px;
     /* font-size:10px; */
     align-items: center;
-    grid-gap:4px;
+    grid-gap:8px;
     justify-self:center;
     &::before, &::after{
       content:"";
