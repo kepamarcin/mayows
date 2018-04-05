@@ -69,6 +69,9 @@ a{
 img{
   vertical-align: top;
 }
+.fade-out{
+  opacity: 0;
+}
 .wraapper{
   box-shadow: var(--box-shadow);
   background-color: var(--white);
