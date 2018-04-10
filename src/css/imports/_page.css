@@ -70,6 +70,10 @@
     }
   }
 }
+.contact-header{
+  font-weight: normal;
+  text-transform: uppercase;
+}
 @supports (display: grid) {
   .product{
     display: grid;
@@ -203,7 +207,7 @@
    color:var(--dark);
    flex-wrap:wrap;
    & svg{
-     
+     fill: var(--blue);
      width:calc(var(--unit)*1.44*1.2);
      height: calc(var(--unit)*1.44*1.2);
    }

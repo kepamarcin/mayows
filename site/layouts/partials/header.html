@@ -25,7 +25,7 @@
   </div>
   {{ else }}
 
-  <h1 class="page-title big-text">{{ if and ((eq .Section "products") .Data.Pages) }}<span>Products</span><br><strong>{{ .Params.product.name }}</strong>{{ else if eq .Section "pages"}}{{.Title}}{{ else }} {{.Title}}{{end}} </h1>
+  <h1 class="page-title big-text">{{ if and ((eq .Section "products") .Data.Pages) }}<span>Products</span><br><strong>{{ .Params.product.name }}</strong>{{ else if eq .Section "pages"}}<span>{{.Title}}</span>{{ else }} {{.Title}}{{end}} </h1>
   <!-- <div class="header-overlay"></div>   -->
   {{if .Params.description}}
     <p class="title-description">{{.Params.description}}</p> 

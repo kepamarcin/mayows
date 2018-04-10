@@ -1,13 +1,13 @@
-<div id="map" style="height:400px;width:100%" class="main-image"></div>
+<div id="map" style="margin:2em 0;height:500px;width:100%" class="main-image"></div>
 <script>
 	function initMap() {
-		var centurion = {lat: 52.377145, lng: 20.942575};
+		var mws = {lat: 25.285447, lng: 51.53104};
 		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 12,
-			center: centurion
+			zoom: 10,
+			center: mws
 		});
 		var marker = new google.maps.Marker({
-			position: centurion,
+			position: mws,
 			map: map
 		});
 	}
