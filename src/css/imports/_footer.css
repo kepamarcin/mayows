@@ -21,8 +21,8 @@
     /* font-weight:bold; */
     & a{
        color:#aaa;
-       color:color(var(--black) lightness(+35%));
-       font-weight: 500;
+       color:color(var(--black) lightness(+55%));
+       font-weight: 400;
        display: inline-flex;
        /* text-transform: uppercase; */
     }
