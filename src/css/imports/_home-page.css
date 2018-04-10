@@ -141,7 +141,7 @@
   & table{
     border-spacing:0;
     width:100%;
-    @media (--viweport-medium){
+    @media (--viewport-medium){
       width:auto;
     }
   }
@@ -157,6 +157,7 @@
 
 }
 .product-button{
+  display:inline-block;
   position: relative;
   font-size:14px;
   text-transform:uppercase;
@@ -183,7 +184,7 @@
     }
   }
   &:hover{
-    border-color: color(var(--dark) alpha(50%));
+    
     background: linear-gradient( to top, color(var(--dark) alpha(30%)) 0%, color(var(--white) alpha(5%)) 100%);
     background-color: rgba(255,255,255, .3);
 

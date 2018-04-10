@@ -3,7 +3,7 @@
   fill:var(--blue) !important;
 }
 .branding-top{
-  margin-top:var(--unit);
+  padding-top:var(--unit);
   display: flex;
   z-index: 6;
   @media (--viewport-medium){
@@ -55,7 +55,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to top, rgba(255,255,255,.9) 0%, rgba(255,255,255,.8) 30%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to top, rgba(255,255,255,.8) 0%, rgba(255,255,255,.6) 30%, rgba(255,255,255,0) 100%);
   z-index:3;
   @media (--viewport-large){
     /* display: none; */

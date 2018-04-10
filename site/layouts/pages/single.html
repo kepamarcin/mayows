@@ -1,0 +1,22 @@
+{{ define "head" }}
+  {{ partial "head/head.html" . }}
+{{ end}}
+
+{{ define "header" }}
+  {{ partial "header" . }}
+{{ end}}
+
+{{ define "main" }}
+  <main>
+    <h1>PAGE CONTACT</h1>
+
+    <article class="main-content">
+        {{.Content}}
+    </article>
+
+  </main>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "footer" . }}
+{{ end}}

@@ -4,7 +4,7 @@
   {{ block "head" . }}
 
   {{ end }}
-  <body class="{{ if .IsPage  }}page{{end}}">
+  <body class="{{ if not .IsHome  }}page{{end}}">
     <div class="wrapper">
       {{ block "header" . }}
 

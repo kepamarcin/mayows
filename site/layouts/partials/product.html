@@ -1,0 +1,107 @@
+<div class="product">
+
+  
+
+    <h2 class="product-fuel">
+        {{ if .Params.product.type.diesel }}
+        Diesel engine
+        {{ else }}
+        Electricty
+        {{ end }}
+        type</h2>
+        
+  {{ with .Params.product.image }}
+    <img class="product-image" src="{{ . }}">
+  {{ end }}
+  <div class="product-desc">
+  <table>
+    <tr>
+      <th class="thname">Size</th>
+    </tr>
+    <tr>
+      <th>Width:</td>
+      <td>{{.Params.product.size.width}}</td>
+      <td>mm</td>
+    </tr>
+    <tr>
+      <th>Depth:</th>
+      <td>{{.Params.product.size.depth}}</td>
+      <td>mm</td>
+    </tr>
+    <tr>
+      <th>Height:</th>
+      <td>{{.Params.product.size.height}}</td>
+      <td>mm</td>
+    </tr>
+    <tr>
+      <th>Weight:</th>
+      <td>{{.Params.product.size.weight}}</td>
+      <td>kg</td>
+    </tr>
+    <tr>
+      <th class="thname">Water purification amount</th>
+    </tr>
+    <tr>
+      <th>Sea water:</th>
+      <td>{{ .Params.product.wpa.sweetwater }}</td>
+      <td><sup>l</sup>&frasl;<sub>h</sub> </td>
+    </tr>
+    <tr>
+      <th>Sweet water:</th>
+      <td>{{ .Params.product.wpa.seawater }}</td>
+      <td><sup>l</sup>&frasl;<sub>h</sub></td>
+    </tr>
+    {{ if .Params.product.type.diesel }}
+    <tr>
+      <th class="thname">Fuel tank</th>
+    </tr>
+    <tr>
+        <th>Capacity:</th>
+        <td>{{ .Params.product.power}}</td>
+        <td>l</td>
+    </tr>
+    <tr>
+      <th>Fuel consumption:</th>
+      <td>{{ .Params.product.operation}}</td>
+      <td><sup>l</sup>&frasl;<sub>h</sub></td>
+    </tr>
+    {{ else }}
+    <tr>
+      <th class="thname">Use power</th>
+    </tr>
+    <tr>
+      <th colspan="3">{{ .Params.product.power}}</th>
+    </tr>
+    <tr>
+      <th class="thname">Continous operation:</th>
+    <tr>
+      <th>Time:</th>
+      <td>{{ .Params.product.operation}}</td>
+      <td>h</td>
+    </tr>
+    {{ end }}
+  </table>
+  
+  <div class="buy-button">
+    <a href="" class="product-button" data-letters="Buy {{.Params.product.name | safeHTML}}">Buy {{.Params.product.name | safeHTML}}</a>
+  </div>
+  <div class="buy-data">
+    tel 123123
+  </div>
+</div>
+  <script>
+    function showData(e){
+      e.preventDefault();
+      data.classList.add("show");
+    }
+    let btn = document.querySelector(".buy-button"),
+         data = document.querySelector(".buy-data");
+    btn.addEventListener("click", showData, false);
+
+  </script>
+  <style>
+  .buy-data{visibility: hidden; opacity: 0;transition: all .3s ease;}
+  .show{visibility: visible; opacity: 1;}
+  </style>
+
+</div>

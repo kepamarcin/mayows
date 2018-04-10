@@ -3,13 +3,15 @@
 {{ end}}
 
 {{ define "header" }}
+<div class="header-wrapper">
   {{ partial "header" . }}
+</div>  
 {{ end}}
 
 {{ define "main" }}
-  <main>
-    
+  <main class="container">
 
+    {{ partial "product" . }}
     <article class="main-content">
         {{.Content}}
     </article>

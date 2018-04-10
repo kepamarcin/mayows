@@ -1,0 +1,96 @@
+{{ define "head" }}
+  {{ partial "head/head.html" . }}
+{{ end}}
+
+{{ define "header" }}
+<div class="header-wrapper">
+  {{ partial "header" . }}
+</div>  
+{{ end}}
+
+{{ define "main" }}
+  <main class="container products-grid">
+    
+    <!-- ELECTRICAL -->
+    <article class="main-content ">
+        <h2>Electrical type</h2>
+            {{ range where .Data.Pages.ByDate "Section" "products" }}
+            {{ if not .Params.product.type.diesel}}
+            <div class="product-item">
+              {{ with .Params.product.image }}
+                <img src="{{ . }}" alt="">
+              {{ end }}
+                <h4 class="product-name">{{ .Params.product.name }}</h4>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>Water purification amount</th>
+                    </tr>
+                    <tr>
+                      <td>Sea water</td>
+                      <td><strong>{{ .Params.product.wpa.seawater}}</strong> </td>
+                      <td><strong><sup>l</sup>&frasl;<sub>h</sub></strong> </td>
+                    </tr>
+                    <tr>
+                      <td>Sweet water</td>
+                      <td><strong>{{ .Params.product.wpa.sweetwater}}</strong></td>
+                      <td><strong><sup>l</sup>&frasl;<sub>h</sub></strong></td>
+                    </tr>
+                    
+                  </tbody>
+                </table> 
+                <span class="section-link">
+                  <a href="{{ .RelPermalink }}" class="product-button" data-letters="details">details</a>
+                </span>
+                <span class="section-line">◦</span>
+              </div>
+              
+            {{ end }}
+            {{ end }}
+
+    </article>
+    <!-- DIESEL -->
+    <article class="main-content">
+      <h2>Diesel type</h2>
+          {{ range where .Data.Pages.ByDate "Section" "products" }}
+          {{ if .Params.product.type.diesel}}
+          <div class="product-item">
+            {{ with .Params.product.image }}
+              <img src="{{ . }}" alt="">
+            {{ end }}
+              <h4 class="product-name">{{ .Params.product.name }}</h4>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Water purification amount</th>
+                  </tr>
+                  <tr>
+                    <td>Sea water</td>
+                    <td><strong>{{ .Params.product.wpa.seawater}}</strong> </td>
+                    <td><strong><sup>l</sup>&frasl;<sub>h</sub></strong> </td>
+                  </tr>
+                  <tr>
+                    <td>Sweet water</td>
+                    <td><strong>{{ .Params.product.wpa.sweetwater}}</strong></td>
+                    <td><strong><sup>l</sup>&frasl;<sub>h</sub></strong> </td>
+                  </tr>
+                  
+                </tbody>
+              </table> 
+              <span class="section-link">
+                <a href="{{ .RelPermalink }}" class="product-button" data-letters="details">details</a>
+              </span>
+              <span class="section-line">◦</span>
+            </div>
+            
+          {{ end }}
+          {{ end }}
+
+  </article>
+
+  </main>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "footer" . }}
+{{ end}}

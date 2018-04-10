@@ -15,16 +15,20 @@
   </div>
   {{if .IsHome}}
   <div class="fullscreen-video-wrap" id="videoWrap">
-     
   <div class="image-wrapper"></div>
   </div>
   <div class="header-overlay"></div>
   <div class="header-content">
-  
     <h1>Water solutions</h1>
     <p>We are innovation</p>
     <a href="" class="btn">Meet our products</a>
-     
   </div>
+  {{ else }}
+
+  <h1 class="page-title big-text">{{ if and ((eq .Section "products") .Data.Pages) }}<span>Products</span><br><strong>{{ .Params.product.name }}</strong>{{ else if eq .Section "pages"}}{{.Title}}{{ else }} {{.Title}}{{end}} </h1>
+  <!-- <div class="header-overlay"></div>   -->
+  {{if .Params.description}}
+    <p class="title-description">{{.Params.description}}</p> 
+    {{ end }}
   {{end}} 
 </header>
