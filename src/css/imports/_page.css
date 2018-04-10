@@ -11,9 +11,9 @@
       /* height:400px; */
       /* background: radial-gradient(ellipse at center, transparent 0%, rgba(13,105,175,1) 100%); */
      
-      background:url("../images/wave-poster.jpg");
+      background:url("../images/wave-posterw.jpg");
       background-size: cover;
-      background-position: center top;
+      background-position: center 15%;
       
     }  
   }
@@ -55,6 +55,19 @@
   }
   & .buy-button{
     margin-top:var(--m)em;
+  }
+  & .product-fuel{
+    
+    & span{
+      font-size: smaller;
+      display: inline-block;
+      margin-top:var(--m)em;
+      font-weight:400;
+      /* text-transform: uppercase; */
+      &::before{
+        content:"Name: ";
+      }
+    }
   }
 }
 @supports (display: grid) {

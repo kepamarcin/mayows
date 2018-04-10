@@ -92,23 +92,6 @@ img{
 .font-stage-2 .highlight{
   font-family: var(--font-sans);
 }
-.no-border{
-  border:none;
-}
-.has-shadow{
-  position: relative;
-    &::after {
-    position: absolute;
-    height: 20px;
-    width: 100%;
-    left: 0;
-    bottom: -40px;
-    content: "";
-    background: radial-gradient(at 50% 0, rgba(0,0,0,0.2), transparent 70%);
-    background-size: 100% 10px;
-    background-repeat: no-repeat;
-  }
-}
 .icon{
   margin-right:6px;
   &.icon-drop svg{
@@ -117,3 +100,5 @@ img{
     height: var(--unit);
   }
 }
+.buy-data{visibility: hidden; opacity: 0;transition: all .3s ease;}
+.show{visibility: visible; opacity: 1;}

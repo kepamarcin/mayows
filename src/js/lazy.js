@@ -1,9 +1,13 @@
 var lazy;
 
-var imgDefer = document.querySelectorAll('.lazy');
-for (var i=0; i<imgDefer.length; i++) {
-if(imgDefer[i].getAttribute('data-src')) {
-imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-} }
+    function showData(e){
+      e.preventDefault();
+      data.classList.add("show");
+    }
+    let btn = document.querySelector(".buy-button"),
+         data = document.querySelector(".buy-data");
+    btn.addEventListener("click", showData, false);
+
+
 
 export default lazy;
