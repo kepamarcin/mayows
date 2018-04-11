@@ -26,7 +26,10 @@
   {{ else }}
 
   <h1 class="page-title big-text">
-    {{ if eq .Section "products" }}{{ if not .Data.Pages }}<span>Products</span><br><strong>{{ .Params.product.name }}</strong>{{else}}{{ .Title}}{{end}}
+    {{ if eq .Section "products" }}
+      {{ if not .Data.Pages }}<span>Products</span><br><strong>{{ .Params.product.name }}</strong>
+      {{else}}{{ .Title}}
+      {{end}}
     {{ else if eq .Section "pages"}}{{.Title}}
     {{ else }} {{.Title}}
     {{end}}</h1>
