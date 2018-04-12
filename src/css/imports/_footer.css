@@ -6,8 +6,6 @@
     padding: inherit  var(--m2)em;
   }
   & h3{
-    /* margin-top: var(--margin-small);
-    margin-bottom: var(--margin-small); */
     text-transform: uppercase;
     font-weight: 300;
     color: #fff;
@@ -18,13 +16,11 @@
     padding: 0;
     margin:.3em 0 !important;
     font-family: var(--font-sans);
-    /* font-weight:bold; */
     & a{
        color:#aaa;
        color:color(var(--black) lightness(+55%));
        font-weight: 400;
        display: inline-flex;
-       /* text-transform: uppercase; */
     }
     & svg {
       fill: color(var(--dark) lightness(+25%));
