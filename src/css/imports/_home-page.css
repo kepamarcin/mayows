@@ -76,7 +76,6 @@
         white-space: nowrap;
         left: 0;
       }
-      
     }
     &::after{
       @media (--viewport-medium){
@@ -116,9 +115,7 @@
 .product-list{
   display:flex;
   flex-direction: column;
-  
   justify-content:space-between;
-  
   padding: var(--m)em;
   @media (--viewport-medium){
       flex-direction:row;
