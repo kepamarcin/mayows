@@ -54,7 +54,6 @@
     margin-top:1em;
     border:1px solid color(var(--dark) alpha(20%));
     padding: .6em .5em .5em .5em;
-    /* background-color: color(var(--blue) alpha(40%)); */
     background: linear-gradient( to top, color(var(--dark) alpha(10%)) 0%, transparent 100%);
     border-radius: 5px;
     @media (--viewport-medium){
