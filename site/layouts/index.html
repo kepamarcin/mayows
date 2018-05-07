@@ -1,16 +1,15 @@
-{{ define "head"}}
-  {{ partial "head/head.html" . }}
-{{ end }}
-
-{{ define "header"}}
-  {{ partial "header" .}}
-{{ end }}
-
+{{ define "head"}} 
+{{ partial "head/head.html" . }} 
+{{ end }} 
+{{ define "header"}} 
+{{ partial "header" .}} 
+{{ end }} 
 {{ define "main" }}
 <section class="lead container">
   <div class="lead-container">
     <!-- <span class="icon icon-drop"><svg><use xlink:href="#drop" /></svg></span> -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae adipisci nesciunt odio, libero!</p>
+    <p><strong>Mayo Water Solutions</strong> are an engineering provider that is solely focused on water in all it’s forms and the challenges
+      in providing solutions for drinking water, irrigation water, municipal wastewater as well as industrial water.</p>
   </div>
 
 </section>
@@ -20,32 +19,43 @@
   <img class=" section-image" src="https://picsum.photos/479/269" alt="">
   <h3 class=" section-header">Our Mission</h3>
   <p class=" section-text">
-      I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
-      <span class="section-link">
-        <span class="icon icon-drop"><svg><use xlink:href="#drop" /></svg></span>
-        <a href="" class="button" data-letters="read more">read more</a>
-      </span> 
+    We are passionate about our work and strive to be a reliable partner in the delivery of water projects.<br><br>
+    Our company has been structured to provide the appropriate services to clients who need technical solutions in relation to water. This means we can not only provide the theoretical technical solution, but we can provide the engineered solution to everyday challenges.
+    <span class="section-link">
+      <span class="icon icon-drop">
+        <svg>
+          <use xlink:href="#drop" />
+        </svg>
+      </span>
+      <a href="" class="button" data-letters="read more">read more</a>
+    </span>
   </p>
   <span class="section-line">&sdot;</span>
-   
-    <!-- <div class="drops">  
+
+  <!-- <div class="drops">  
       
       <span class="icon icon-drop"><svg><use xlink:href="#drop" /></svg></span>
     </div> -->
 </section>
-<section class="container section">
+<!-- <section class="container section">
   <img class=" section-image" src="https://picsum.photos/480/270" alt="">
   <h3 class=" section-header">Another, another very long header, header to impress!</h3>
   <p class=" section-text">
-    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes.
+    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you
+    a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder
+    of human happiness. No one rejects, dislikes.
     <span class="section-link">
-      <span class="icon icon-drop"><svg><use xlink:href="#drop" /></svg></span>
+      <span class="icon icon-drop">
+        <svg>
+          <use xlink:href="#drop" />
+        </svg>
+      </span>
       <a href="" class="button" data-letters="read more">read more</a>
-    </span> 
+    </span>
   </p>
-  <!-- <span class="section-line">&#9702;</span> -->
+  <span class="section-line">&#9702;</span>
   <span class="section-line">&sdot;</span>
-</section>
+</section> -->
 <section class="products">
   <div class="product-list container">
     <h3 class="products-headline">Best sellers</h3>
@@ -59,11 +69,21 @@
           </tr>
           <tr>
             <td>Sea water</td>
-            <td><strong>40 <sup>l</sup>&frasl;<sub>h</sub> </strong></td>
+            <td>
+              <strong>40
+                <sup>l</sup>&frasl;
+                <sub>h</sub>
+              </strong>
+            </td>
           </tr>
           <tr>
             <td>Sweet water</td>
-            <td><strong>80 <sup>l</sup>&frasl;<sub>h</sub> </strong></td>
+            <td>
+              <strong>80
+                <sup>l</sup>&frasl;
+                <sub>h</sub>
+              </strong>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -81,11 +101,21 @@
           </tr>
           <tr>
             <td>Sea water</td>
-            <td><strong>100 <sup>l</sup>&frasl;<sub>h</sub></strong> </td>
+            <td>
+              <strong>100
+                <sup>l</sup>&frasl;
+                <sub>h</sub>
+              </strong>
+            </td>
           </tr>
           <tr>
             <td>Sweet water</td>
-            <td><strong>200 <sup>l</sup>&frasl;<sub>h</sub></strong> </td>
+            <td>
+              <strong>200
+                <sup>l</sup>&frasl;
+                <sub>h</sub>
+              </strong>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -103,15 +133,25 @@
           </tr>
           <tr>
             <td>Sea water</td>
-            <td><strong>250 <sup>l</sup>&frasl;<sub>h</sub></strong> </td>
+            <td>
+              <strong>250
+                <sup>l</sup>&frasl;
+                <sub>h</sub>
+              </strong>
+            </td>
           </tr>
           <tr>
             <td>Sweet water</td>
-            <td><strong>500 <sup>l</sup>&frasl;<sub>h</sub></strong> </td>
+            <td>
+              <strong>500
+                <sup>l</sup>&frasl;
+                <sub>h</sub>
+              </strong>
+            </td>
           </tr>
-          
+
         </tbody>
-      </table> 
+      </table>
       <span class="section-link">
         <a href="/products/e-100/" class="product-button" data-letters="details">details</a>
       </span>
@@ -119,31 +159,29 @@
   </div>
 </section>
 
-{{ end }}
-
-{{ define "footer"}}
+{{ end }} 
+  {{ define "footer"}} 
   {{ partial "footer" .}}
-  <script>
-    let width = window.innerWidth;
-    function loadVideo(width){
-      let node = document.getElementById("videoWrap");
-      let video = document.createElement('video');
-      node.childNodes[1].classList.add("fade-out");
-      
-      
-      video.poster = "images/wave-poster.jpg";
-      video.src = "video/wave"+width+".mp4";
-      video.autoplay = true;
-      video.muted = true;
-      video.loop = true;
-      video.setAttribute("playsinline", "");
-      node.appendChild(video);
-      node.childNodes[1].style.display = "none";
-    }
-    if( width >= 992 && width <= 1400){
-      loadVideo(720);
-    } else if( width > 1400){
-      loadVideo("");
-    }
-  </script>
-{{ end }}
+<script>
+  let width = window.innerWidth;
+  function loadVideo(width) {
+    let node = document.getElementById("videoWrap");
+    let video = document.createElement('video');
+    node.childNodes[1].classList.add("fade-out");
+
+
+    video.poster = "images/wave-poster.jpg";
+    video.src = "video/wave" + width + ".mp4";
+    video.autoplay = true;
+    video.muted = true;
+    video.loop = true;
+    video.setAttribute("playsinline", "");
+    node.appendChild(video);
+    node.childNodes[1].style.display = "none";
+  }
+  if (width >= 992 && width <= 1400) {
+    loadVideo(720);
+  } else if (width > 1400) {
+    loadVideo("");
+  }
+</script> {{ end }}

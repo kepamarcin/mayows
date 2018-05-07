@@ -27,6 +27,49 @@
   & .page-description{
     z-index: 2;
   }
+  & .main-content h3{
+    font-family:"lingua franca";
+    color:var(--dark);
+    font-size: 2.0736em;
+    letter-spacing: -0.02em;
+  }
+  & .main-content p{
+    font-size: 1.125em;
+    font-family:autor;
+    
+  }
+  & .main-content ul{
+    display: inline-block;
+    padding-left: 20px;
+    @media( --viewport-medium){
+      padding-left: 40px;
+    }
+  }
+  & .main-content li{
+    width:auto;
+    font-size: 1.125em;
+    list-style:none;
+    position: relative;
+    margin-right: 1em;
+    padding: .3em .5em;
+    transform: translateX(20px);
+    &::before{
+      margin-right: 10em;
+      position: absolute;
+      content:"";
+      background-image:url('/images/drop.svg');
+      width:.7em;
+      height: .7em;
+      transform: translate(-30px, 40%);
+      background-repeat:no-repeat;
+      background-size:contain;
+    }
+    &:nth-child(even){
+      /* color:color(var(--dark) lightness(45%)); */
+      background:linear-gradient(to top, rgba(235,235,235) 0%, #fafafa 20%, #fff 30%, #fff 70%,#fafafa 80%, rgba(235,235,235) 100%);
+      border-radius:10px;
+    }
+  }
 }
 .product{
   display: flex;
@@ -128,7 +171,7 @@
 
 
 
-.main-content{
+/* .main-content{
 
   & ul{
     margin: 1.3em 0;
@@ -148,7 +191,7 @@
       }
     }
   }
-}
+} */
 
 .main-content{
 
