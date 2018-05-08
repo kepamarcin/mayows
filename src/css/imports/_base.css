@@ -102,3 +102,4 @@ img{
 }
 .buy-data{visibility: hidden; opacity: 0;transition: all .3s ease;}
 .show{visibility: visible; opacity: 1;}
+.fstn{font-style: normal;}
