@@ -21,7 +21,7 @@
     
     <!-- ELECTRICAL -->
     <article class="main-content ">
-        <h2>Electrical type</h2>
+        <!-- <h2>Electrical type</h2> -->
             {{ range where .Data.Pages.ByDate "Section" "products" }}
             {{ if not .Params.product.type.diesel}}
             <div class="product-item">
@@ -35,12 +35,12 @@
                       <th>Water purification amount</th>
                     </tr>
                     <tr>
-                      <td>Sea water:</td>
+                      <td>Sweet water:</td>
                       <td><strong>{{ .Params.product.wpa.seawater}}</strong> </td>
                       <td><strong><sup>l</sup>&frasl;<sub>h</sub></strong> </td>
                     </tr>
                     <tr>
-                      <td>Sweet water:</td>
+                      <td>Sea water:</td>
                       <td><strong>{{ .Params.product.wpa.sweetwater}}</strong></td>
                       <td><strong><sup>l</sup>&frasl;<sub>h</sub></strong></td>
                     </tr>
@@ -58,7 +58,7 @@
 
     </article>
     <!-- DIESEL -->
-    <article class="main-content">
+    <!-- <article class="main-content">
       <h2>Diesel type</h2>
           {{ range where .Data.Pages.ByDate "Section" "products" }}
           {{ if .Params.product.type.diesel}}
@@ -94,7 +94,7 @@
           {{ end }}
           {{ end }}
 
-  </article>
+  </article> -->
 
   </main>
 {{ end }}

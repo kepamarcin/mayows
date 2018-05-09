@@ -1,8 +1,8 @@
 ---
 title: "E 40h AC"
-date: 2018-04-04T14:11:39+02:00
+date: 2018-04-04T14:12:39+02:00
 draft: false
-description: "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+description: "Requires one sediment filter to be used.The filter replacement frequency depends on the quality of original water. It normally requires replacing the filter every one to two months."
 product:
     type:
         diesel: false

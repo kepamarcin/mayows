@@ -13,12 +13,13 @@
      
       background:url("../images/wave-posterw.jpg");
       background-size: cover;
-      background-position: center 65%;
+      background-position: center 85%;
       
     }  
   }
   & .page-title{
     font-size: calc(var(--m4) * var(--m4)em);
+    margin-bottom:calc(var(--m)/8)em ;
     & span{
       font-weight: 300;
       font-size: 48px;
@@ -26,6 +27,24 @@
   }
   & .page-description{
     z-index: 2;
+  }
+  & .title-description{
+    font-size: calc(var(--m4)/2)em ;
+    font-family: var(--font-sans);
+    @media(--viewport-medium){
+      width:75%;
+    }
+  }
+  & .lead-container{
+    text-align:left;
+    font-size: var(--m)em;
+    font-style:normal;
+    margin-left:0;
+    & p{
+      font-size: 17px;
+    font-family: var(--font-sans);
+    font-weight:400;
+    }
   }
   & .main-content h3{
     font-family:"lingua franca";
@@ -263,21 +282,24 @@
   }
 }
 @supports (display: grid) {
-  .products-grid{
+  /* .products-grid{ */
+  .main-content{
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     grid-gap: 10%;
+    /* grid-gap: 50px; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
-    grid-template-areas: 
-    "product ";
+    /* grid-template-areas: 
+    "product "; */
     @media (--viewport-medium){
-      grid-template-columns: 45% 45%;
-      grid-template-areas: 
-    "product product";
+      /* grid-template-columns: 45% 45%; */
+      /* grid-template-areas:  */
+    /* "product product"; */
     }
   }
   .product-item{
-    grid-area: product;
+    /* grid-area: product; */
     & img{
       display: inherit;
       margin: 0 auto;
