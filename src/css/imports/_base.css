@@ -87,7 +87,7 @@ img{
   padding: calc(var(--unit)*1.2);
   background: linear-gradient(to right, color(var(--dark) lightness(60%)), transparent 1.5%);
     background-color: color(var(--dark) lightness(93%));
-    border-left: calc(var(--unit)/6) solid var(--yellow);
+    border-left: calc(var(--unit)/6) solid var(--blue);
 }
 .font-stage-2 .highlight{
   font-family: var(--font-sans);

@@ -4,6 +4,7 @@ import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
 import flatten from "gulp-flatten";
 import postcss from "gulp-postcss";
+import sourcemaps from "gulp-sourcemaps";
 import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
@@ -27,7 +28,9 @@ gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArg
 // Compile CSS with PostCSS
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
+    .pipe(sourcemaps.init())
     .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
