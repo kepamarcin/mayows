@@ -23,6 +23,12 @@ menu:
           <a href="mailto:sam@mayowatersolutions.com" class="mail">sam@mayowatersolutions.com</a>
         </p>
         <a href="" class="product-button" data-letters="Read Bio">Read bio</a>
+      </div>
+      <div class="bio-details">
+        <h3 class="">Sam Murdock</h3>
+        <p class="">
+          Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+        </p>
       </div> 
     </div>
   </div>
@@ -41,7 +47,13 @@ menu:
           <a href="mailto:geoff@mayowatersolutions.com" class="mail">geoff@mayowatersolutions.com</a>
         </p>
         <a href="" class="product-button" data-letters="Read Bio">Read bio</a>
-      </div> 
+      </div>
+      <div class="bio-details">
+        <h3 class="">Geoff Gosden</h3>
+        <p class="">
+          Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+        </p>
+      </div>  
     </div>
   </div>
 </div>

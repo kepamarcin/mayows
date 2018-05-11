@@ -184,6 +184,12 @@
     }
   }
 }
+.bio-details{
+  display:none;
+}
+.show-bio{
+  display:block;
+}
 @supports (display: grid) {
   .product{
     display: grid;
