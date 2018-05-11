@@ -27,136 +27,54 @@
           <use xlink:href="#drop" />
         </svg>
       </span>
-      <a href="" class="button" data-letters="read more">read more</a>
+      <a href="/our-services/" class="button" data-letters="Our Services">Our Services</a>
     </span>
   </p>
   <span class="section-line">&sdot;</span>
-
-  <!-- <div class="drops">  
-      
-      <span class="icon icon-drop"><svg><use xlink:href="#drop" /></svg></span>
-    </div> -->
 </section>
-<!-- <section class="container section">
-  <img class=" section-image" src="https://picsum.photos/480/270" alt="">
-  <h3 class=" section-header">Another, another very long header, header to impress!</h3>
-  <p class=" section-text">
-    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you
-    a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder
-    of human happiness. No one rejects, dislikes.
-    <span class="section-link">
-      <span class="icon icon-drop">
-        <svg>
-          <use xlink:href="#drop" />
-        </svg>
-      </span>
-      <a href="" class="button" data-letters="read more">read more</a>
-    </span>
-  </p>
-  <span class="section-line">&#9702;</span>
-  <span class="section-line">&sdot;</span>
-</section> -->
+
 <section class="products">
   <div class="product-list container">
-    <h3 class="products-headline">Best sellers</h3>
-    <div class="product-item">
-      <img src="/images/e-40.png" alt="">
-      <h4 class="product-name">E&ndash;400H</h4>
-      <table>
-        <tbody>
-          <tr>
-            <th>Water purification amount</th>
-          </tr>
-          <tr>
-            <td>Sea water</td>
-            <td>
-              <strong>40
-                <sup>l</sup>&frasl;
-                <sub>h</sub>
-              </strong>
-            </td>
-          </tr>
-          <tr>
-            <td>Sweet water</td>
-            <td>
-              <strong>80
-                <sup>l</sup>&frasl;
-                <sub>h</sub>
-              </strong>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <span class="section-link">
-        <a href="/products/e-40h/" class="product-button" data-letters="details">details</a>
-      </span>
-    </div>
-    <div class="product-item">
-      <img src="/images/e-100.png" alt="">
-      <h4 class="product-name">E&ndash;100</h4>
-      <table>
-        <tbody>
-          <tr>
-            <th>Water purification amount</th>
-          </tr>
-          <tr>
-            <td>Sea water</td>
-            <td>
-              <strong>100
-                <sup>l</sup>&frasl;
-                <sub>h</sub>
-              </strong>
-            </td>
-          </tr>
-          <tr>
-            <td>Sweet water</td>
-            <td>
-              <strong>200
-                <sup>l</sup>&frasl;
-                <sub>h</sub>
-              </strong>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <span class="section-link">
-        <a href="/products/e-100/" class="product-button" data-letters="details">details</a>
-      </span>
-    </div>
-    <div class="product-item">
-      <img src="/images/e-250.png" alt="">
-      <h4 class="product-name">E&ndash;250</h4>
-      <table>
-        <tbody>
-          <tr>
-            <th>Water purification amount</th>
-          </tr>
-          <tr>
-            <td>Sea water</td>
-            <td>
-              <strong>250
-                <sup>l</sup>&frasl;
-                <sub>h</sub>
-              </strong>
-            </td>
-          </tr>
-          <tr>
-            <td>Sweet water</td>
-            <td>
-              <strong>500
-                <sup>l</sup>&frasl;
-                <sub>h</sub>
-              </strong>
-            </td>
-          </tr>
+    <h3 class="products-headline">Best sellers  <span class="section-link" style="display: inline-flex; margin-top:20px; font-family:autor;float:right; margin-right: 10px;">
+        <a href="" class="button" data-letters="Our Products">Our Products</a>
+      </span></h3>
+    
 
-        </tbody>
-      </table>
-      <span class="section-link">
-        <a href="/products/e-100/" class="product-button" data-letters="details">details</a>
-      </span>
-    </div>
+    {{ range first 3 (where .Data.Pages.ByTitle.Reverse  "Section" "products" ) }}
+            {{ if not .Params.product.type.diesel}}
+            <div class="product-item">
+              {{ with .Params.product.image }}
+                <img src="{{ . }}" alt="">
+              {{ end }}
+                <h4 class="product-name">{{ .Params.product.name }}</h4>
+                <table style="width:100%">
+                  <tbody>
+                    <tr>
+                      <th>Water purification amount</th>
+                    </tr>
+                    <tr>
+                      <td>Sweet water:</td>
+                      <td><strong>{{ .Params.product.wpa.seawater}}</strong> </td>
+                      <td><strong><sup>l</sup>&frasl;<sub>h</sub></strong> </td>
+                    </tr>
+                    <tr>
+                      <td>Sea water:</td>
+                      <td><strong>{{ .Params.product.wpa.sweetwater}}</strong></td>
+                      <td><strong><sup>l</sup>&frasl;<sub>h</sub></strong></td>
+                    </tr>
+                    
+                  </tbody>
+                </table> 
+                <span class="section-link">
+                  <a href="{{ .RelPermalink }}" class="product-button" data-letters="details">details</a>
+                </span>
+                <span class="section-line">&sdot;</span>
+              </div>
+              
+            {{ end }}
+            {{ end }}
   </div>
+
 </section>
 
 {{ end }} 
