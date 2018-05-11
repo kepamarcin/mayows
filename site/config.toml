@@ -7,3 +7,22 @@ title = "Mayo Water Solutions"
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[menu]
+
+  [[menu.main]]
+    identifier = "Home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+
+
+  [[menu.main]]
+    identifier = "reverse osmosis"
+    name = "reverse osmosis"
+    url = "/products/"
+    weight = 3
+  
+
+
