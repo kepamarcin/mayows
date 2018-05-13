@@ -26,6 +26,7 @@ menu:
       </div>
       <div class="bio-details">
         <h3 class="">Sam Murdock</h3>
+        <h3 class="">Add animations</h3>
         <p class="">
           Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
         </p>
@@ -38,6 +39,7 @@ menu:
     </div>
     <div class="bio">
       <h3 class="name">Geoff Gosden</h3>
+      
       <p class="position">
         Company Director
       </p>
@@ -50,6 +52,7 @@ menu:
       </div>
       <div class="bio-details">
         <h3 class="">Geoff Gosden</h3>
+        <h3 class="">Add animations</h3>
         <p class="">
           Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
         </p>
