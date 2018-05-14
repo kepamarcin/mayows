@@ -25,11 +25,14 @@ menu:
         <a href="" class="product-button" data-letters="Read Bio">Read bio</a>
       </div>
       <div class="bio-details">
+        <img src="" data-src="https://picsum.photos/450/250">
         <div class="bio-wrapper">
           <h3 class="">Sam Murdock</h3>
-          <h3 class="">Add animations</h3>
           <p class="">
-            Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+            Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany</p>
+            <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          </p>
+          <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
           </p>
         </div>
       </div> 
@@ -52,11 +55,14 @@ menu:
         <a href="" class="product-button" data-letters="Read Bio">Read bio</a>
       </div>
       <div class="bio-details">
+        <img src="" data-src="https://picsum.photos/450/250">
         <div class="bio-wrapper">
           <h3 class="">Geoff Gosden</h3>
-          <h3 class="">Add animations</h3>
-          <p class="">
-            Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          </p>
+          <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          </p>
+          <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
           </p>
         </div>
       </div>  

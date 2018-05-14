@@ -113,7 +113,7 @@
         height: .6em;
         left: 50%;
         transform:translate(-50%, -15px );
-        
+        background-color:transparent;
       }
     }
 

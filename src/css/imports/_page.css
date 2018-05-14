@@ -219,12 +219,21 @@
   @media(--viewport-medium){
     height: 100vh;
     width:50vw;
+    max-width: 500px;
     top: 0;
     right: 0;
   }
 
+  & img{
+    width:100%
+  }
+
   & .bio-wrapper{
-    padding:2em;
+    padding: 0 1em 1em 1em;
+
+    @media(--viewport-medium){
+      padding: 0 2em 2em 2em;
+    }
   }
   
 }
