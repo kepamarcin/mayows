@@ -227,9 +227,12 @@
   & img{
     width:100%
   }
+  & p {
+    text-align: left;
+  }
 
   & .bio-wrapper{
-    padding: 0 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
 
     @media(--viewport-medium){
       padding: 0 2em 2em 2em;

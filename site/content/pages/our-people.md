@@ -29,10 +29,10 @@ menu:
         <div class="bio-wrapper">
           <h3 class="">Sam Murdock</h3>
           <p class="">
-            Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany</p>
-            <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus sit amet ligula ac gravida. Curabitur condimentum nulla ut tellus elementum, ut tempor risus venenatis. Nullam volutpat venenatis tincidunt.</p>
+            <p class="">In purus nisi, fermentum non dictum id, aliquam eget risus. Nam finibus condimentum nulla at bibendum. In ut nisi dictum neque fermentum vestibulum. Integer id justo vel sapien feugiat congue vitae a lacus. Nam ac vestibulum lectus. 
           </p>
-          <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          <p class="">Fusce eget dui odio. Proin rhoncus massa id justo hendrerit facilisis. Sed venenatis justo nulla, at tempus ligula imperdiet ac. 
           </p>
         </div>
       </div> 
@@ -58,11 +58,11 @@ menu:
         <img src="" data-src="https://picsum.photos/450/250">
         <div class="bio-wrapper">
           <h3 class="">Geoff Gosden</h3>
-          <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus sit amet ligula ac gravida. Curabitur condimentum nulla ut tellus elementum, ut tempor risus venenatis. Nullam volutpat venenatis tincidunt.</p>
+            <p class="">In purus nisi, fermentum non dictum id, aliquam eget risus. Nam finibus condimentum nulla at bibendum. In ut nisi dictum neque fermentum vestibulum. Integer id justo vel sapien feugiat congue vitae a lacus. Nam ac vestibulum lectus. 
           </p>
-          <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
-          </p>
-          <p class="">DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          <p class="">Fusce eget dui odio. Proin rhoncus massa id justo hendrerit facilisis. Sed venenatis justo nulla, at tempus ligula imperdiet ac. 
           </p>
         </div>
       </div>  
