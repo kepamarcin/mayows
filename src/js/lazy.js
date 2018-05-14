@@ -4,7 +4,7 @@ var lazy;
       e.preventDefault();
       data.classList.add("show");
     }
-    let btn = document.querySelector(".buy-button"),
+    let btn = document.getElementById("buy"),
          data = document.querySelector(".buy-data");
 
     if(btn){
@@ -15,31 +15,55 @@ var lazy;
     let bioBtn = document.querySelectorAll(".contact .product-button");
     let arr = Array.from(bioBtn);
 
+    
+    
+
     arr.map(function(item){
       item.addEventListener("click",function(e){
         e.preventDefault();
         
-        bgOverlay.classList.add("background-visible");
+        let bioDetailsDiv = item.parentElement.nextElementSibling;
+
+        let open = function(){
+          bioDetailsDiv.classList.add("show-bio");
+          bgOverlay.classList.add("background-visible");
+        }
+
+        let close = function(){
+          bioDetailsDiv.classList.remove("show-bio");
+          bgOverlay.classList.remove("background-visible");
+          setTimeout(function(){
+            bioDetailsDiv.scrollTop = 0;
+          }, 500)
+          bgOverlay.removeEventListener("click", closeFn, false);
+          
+        }
+        function closeFn(){
+          close();
+        }
+        // bgOverlay.classList.add("background-visible");
         let div = item.parentElement.parentElement;
         let bioDetails = div.querySelector(".bio-details");
         let bioWrapper = bioDetails.children[1];
-
+        open();
     
-        bioDetails.classList.toggle("show-bio");
-        let closeBtn = document.createElement('a');
+        // bioDetails.classList.toggle("show-bio");
+
+        let closeBtn = document.createElement('span');
         let img = bioDetails.firstElementChild;
         img.setAttribute("src", img.getAttribute("data-src"));
-        // img.src = "https://picsum.photos/450/450";
-        // bioDetails.insertBefore(img, bioWrapper);
-        closeBtn.href = "#";
+
+        // closeBtn.href = "#";
         closeBtn.innerHTML = "Close";
         closeBtn.classList = "product-button red";
-        closeBtn.addEventListener("click", function(e){
-          e.preventDefault();
-          this.parentElement.parentElement.classList.remove("show-bio");
-          bgOverlay.classList.remove("background-visible");
-        }, false);
-        
+        closeBtn.addEventListener("click", close, false);
+
+        bgOverlay.addEventListener("click", closeFn, {
+          once: true,
+          passive: false,
+          capture: false
+        });
+
         if(bioWrapper.querySelectorAll(".product-button").length == 0)
           bioWrapper.appendChild(closeBtn);
 

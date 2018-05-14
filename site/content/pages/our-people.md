@@ -22,10 +22,10 @@ menu:
           <a href="tel:00000000" class="phone">123456789</a>
           <a href="mailto:sam@mayowatersolutions.com" class="mail">sam@mayowatersolutions.com</a>
         </p>
-        <a href="" class="product-button" data-letters="Read Bio">Read bio</a>
+        <span class="product-button" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
-        <img src="" data-src="https://picsum.photos/450/250">
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://picsum.photos/450/250">
         <div class="bio-wrapper">
           <h3 class="">Sam Murdock</h3>
           <p class="">
@@ -52,10 +52,10 @@ menu:
           <a href="tel:00000000" class="phone">123456789</a>
           <a href="mailto:geoff@mayowatersolutions.com" class="mail">geoff@mayowatersolutions.com</a>
         </p>
-        <a href="" class="product-button" data-letters="Read Bio">Read bio</a>
+        <span class="product-button" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
-        <img src="" data-src="https://picsum.photos/450/250">
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://picsum.photos/450/250">
         <div class="bio-wrapper">
           <h3 class="">Geoff Gosden</h3>
           <p class="">
