@@ -25,11 +25,13 @@ menu:
         <a href="" class="product-button" data-letters="Read Bio">Read bio</a>
       </div>
       <div class="bio-details">
-        <h3 class="">Sam Murdock</h3>
-        <h3 class="">Add animations</h3>
-        <p class="">
-          Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
-        </p>
+        <div class="bio-wrapper">
+          <h3 class="">Sam Murdock</h3>
+          <h3 class="">Add animations</h3>
+          <p class="">
+            Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          </p>
+        </div>
       </div> 
     </div>
   </div>
@@ -39,7 +41,6 @@ menu:
     </div>
     <div class="bio">
       <h3 class="name">Geoff Gosden</h3>
-      
       <p class="position">
         Company Director
       </p>
@@ -51,11 +52,13 @@ menu:
         <a href="" class="product-button" data-letters="Read Bio">Read bio</a>
       </div>
       <div class="bio-details">
-        <h3 class="">Geoff Gosden</h3>
-        <h3 class="">Add animations</h3>
-        <p class="">
-          Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
-        </p>
+        <div class="bio-wrapper">
+          <h3 class="">Geoff Gosden</h3>
+          <h3 class="">Add animations</h3>
+          <p class="">
+            Company Director, Company Director Company DirectorCompany DirectorCompany Director Company Director Company DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany DirectorCompany Director
+          </p>
+        </div>
       </div>  
     </div>
   </div>
