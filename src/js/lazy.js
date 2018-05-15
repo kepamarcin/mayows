@@ -27,53 +27,36 @@ var lazy;
         let open = function(){
           bioDetailsDiv.classList.add("show-bio");
           bgOverlay.classList.add("background-visible");
+          bgOverlay.addEventListener("click", close, false);
         }
 
         let close = function(){
           bioDetailsDiv.classList.remove("show-bio");
           bgOverlay.classList.remove("background-visible");
+          bgOverlay.removeEventListener("click", close, false);
           setTimeout(function(){
             bioDetailsDiv.scrollTop = 0;
-          }, 500)
-          bgOverlay.removeEventListener("click", closeFn, {
-            once: true,
-            passive: false,
-            capture: false
-          });
-          
-          
+          }, 500);
+          closeBtn.remove();
         }
-        function closeFn(){
-          close();
-          console.log(bgOverlay);
-        }
-        // bgOverlay.classList.add("background-visible");
+
         let div = item.parentElement.parentElement;
         let bioDetails = div.querySelector(".bio-details");
         let bioWrapper = bioDetails.children[1];
         open();
     
-        // bioDetails.classList.toggle("show-bio");
-
         let closeBtn = document.createElement('span');
         let img = bioDetails.firstElementChild;
         img.setAttribute("src", img.getAttribute("data-src"));
 
-        // closeBtn.href = "#";
         closeBtn.innerHTML = "Close";
         closeBtn.classList = "product-button red";
-        // closeBtn.addEventListener("click", closeFn, false);
 
-        bgOverlay.addEventListener("click", closeFn, {
-          once: true,
-          passive: false,
-          capture: false
-        });
-
-        if(bioWrapper.querySelectorAll(".product-button").length == 0){
+        // if(bioWrapper.querySelectorAll(".product-button").length == 0){
           bioWrapper.appendChild(closeBtn);
-        }
-        closeBtn.addEventListener("click", closeFn, false);
+        // }
+        closeBtn.addEventListener("click", close, false);
+
       }, false);
     })
     

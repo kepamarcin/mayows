@@ -126,6 +126,16 @@
   width: 100%;
   margin-bottom: var(--m4)em;
   font-size:var(--m4)em;
+
+  & .section-link{
+    display: inline-flex; 
+    font-family:autor;
+    @media (--viewport-medium){
+      float:right;
+      margin-top:20px;
+      margin-right: 10px;
+    }
+  }
 }
 .product-name{
   text-transform:uppercase;
