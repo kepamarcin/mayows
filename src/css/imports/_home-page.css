@@ -161,7 +161,7 @@
   color:color(var(--dark) alpha(70%));
   margin-top:1em;
   border:1px solid color(var(--dark) alpha(20%));
-  padding: .7em .5em .5em .5em;
+  padding: .5em .5em .5em .5em;
   background: linear-gradient( to top, color(var(--dark) alpha(10%)) 0%, transparent 100%);
   border-radius: 5px;
   transition: all .5s ease;
