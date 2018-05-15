@@ -35,11 +35,17 @@ var lazy;
           setTimeout(function(){
             bioDetailsDiv.scrollTop = 0;
           }, 500)
-          bgOverlay.removeEventListener("click", closeFn, false);
+          bgOverlay.removeEventListener("click", closeFn, {
+            once: true,
+            passive: false,
+            capture: false
+          });
+          
           
         }
         function closeFn(){
           close();
+          console.log(bgOverlay);
         }
         // bgOverlay.classList.add("background-visible");
         let div = item.parentElement.parentElement;
@@ -56,7 +62,7 @@ var lazy;
         // closeBtn.href = "#";
         closeBtn.innerHTML = "Close";
         closeBtn.classList = "product-button red";
-        closeBtn.addEventListener("click", close, false);
+        // closeBtn.addEventListener("click", closeFn, false);
 
         bgOverlay.addEventListener("click", closeFn, {
           once: true,
@@ -64,9 +70,10 @@ var lazy;
           capture: false
         });
 
-        if(bioWrapper.querySelectorAll(".product-button").length == 0)
+        if(bioWrapper.querySelectorAll(".product-button").length == 0){
           bioWrapper.appendChild(closeBtn);
-
+        }
+        closeBtn.addEventListener("click", closeFn, false);
       }, false);
     })
     

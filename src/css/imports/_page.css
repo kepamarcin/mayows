@@ -239,7 +239,7 @@
   }
 
   & .bio-wrapper{
-    padding: 1em 1em 1em 1em;
+    padding: 1em 1em 2.5em 1em;
 
     @media(--viewport-medium){
       padding: 0 2em 2em 2em;
