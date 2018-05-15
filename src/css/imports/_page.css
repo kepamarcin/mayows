@@ -188,6 +188,7 @@
 .product-button.red{
   background: linear-gradient( to top, darkred 0%, red 100%);
   color: var(--white);
+  margin-bottom:2em;
 }
 #buy{
   color:var(--blue);
