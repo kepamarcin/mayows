@@ -203,7 +203,7 @@
   background-color: color(var(--dark) alpha(90%));
   top: 0;
   left: 0;
-  transition: all .25s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
+  transition: all .4s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
   z-index: 150;
 }
 .background-visible{
