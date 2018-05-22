@@ -65,49 +65,91 @@ var lazy;
     //   console.log(bioDetailsDiv);
       
     // }
+    const wrapper = document.querySelector(".wrapper");
 
+    wrapper.addEventListener("click", function(e){
+      const productButtons = wrapper.querySelectorAll(".product-button");
+      if( e.target.className === "product-button"){
+        open.bind(e.target.parentElement.nextElementSibling)();
+        
+      }
+      else if(e.keyCode == 27 || e.target.classList.contains("background-overlay") || e.target.classList.contains("red")){
+        
+        close.bind(this)();
+        
+      }
+      else 
+        return;
+
+    }, false);
 
     function open(){
       this.classList.add("show-bio");
-      let q = this.querySelector(".product-button");
       bgOverlay.classList.add("background-visible");
-      bgOverlay.addEventListener("click", close, false);
-
-      if( !q ){
-        createCloseBtn.bind(this)();
-        let img = this.firstElementChild;
-        img.setAttribute("src", img.getAttribute("data-src"));
-      }
-          
-
+      window.addEventListener("keydown", close, false);
+      createCloseBtn.bind(this)();
     }
+    function close(){
+      let panelOpened = document.querySelector(".show-bio");
+      if(panelOpened){
+        panelOpened.classList.remove("show-bio");
+        setTimeout(function(){
+          panelOpened.scrollTop = 0;
+        }, 500);
+      }
+      bgOverlay.classList.remove("background-visible");
+      window.removeEventListener("keydown", close, false);
+    }
+
+    // function open(){
+    //   this.classList.add("show-bio");
+    //   let q = this.querySelector(".product-button");
+    //   bgOverlay.classList.add("background-visible");
+      
+    //   wrapper.addEventListener("click", close, false);
+    //   window.addEventListener("keydown", close, false);
+
+    //     createCloseBtn.bind(this)();
+    //     let img = this.firstElementChild;
+    //     img.setAttribute("src", img.getAttribute("data-src"));
+    // }    
+      // function close(e){
+      //   if(e.keyCode == 27 || e.target.classList.contains("background-overlay") || e.target.classList.contains("red")){
+          
+      //   let panelOpened = document.querySelector(".show-bio");
+      //   panelOpened.classList.remove("show-bio");
+
+      //   bgOverlay.classList.remove("background-visible");
+      //   wrapper.removeEventListener("click", close, false);
+      //   window.removeEventListener("keydown", close, false);
+
+      //   setTimeout(function(){
+      //     panelOpened.scrollTop = 0;
+      //   }, 500);
+          
+      //   }      
+      // }
+    
     function createCloseBtn(){
-      let closeBtn = document.createElement('span');
-      let btn = this.querySelector(".bio-wrapper");
+      if(this.querySelector(".product-button")){
+        return;
+      }
+      const closeBtn = document.createElement('span');
+      const bioWrapper = this.querySelector(".bio-wrapper");
       closeBtn.innerHTML = "Close";
       closeBtn.classList = "product-button red";
-      btn.appendChild(closeBtn);
-      closeBtn.addEventListener("click", close, false);
+      bioWrapper.appendChild(closeBtn);
+      let img = this.firstElementChild;
+      img.setAttribute("src", img.getAttribute("data-src"));
     }
 
-    function close(){
-      let panel = document.querySelector(".show-bio");
-      panel.classList.remove("show-bio");
 
-      bgOverlay.classList.remove("background-visible");
-      bgOverlay.removeEventListener("click", close, false);
-
-      setTimeout(function(){
-        panel.scrollTop = 0;
-      }, 500);
-    }
-
-    arr.map(function(item){  
-      item.addEventListener("click",function(){
-        let bioDetailsDiv = item.parentElement.nextElementSibling;
-        open.bind(bioDetailsDiv)();
-      }, false);
-    })
+    // arr.map(function(item){  
+    //   item.addEventListener("click",function(){
+    //     let bioDetailsDiv = item.parentElement.nextElementSibling;
+    //     open.bind(bioDetailsDiv)();
+    //   }, false);
+    // })
     
 
 
