@@ -89,6 +89,7 @@ var lazy;
       window.addEventListener("keydown", close, false);
       createCloseBtn.bind(this)();
     }
+    
     function close(){
       let panelOpened = document.querySelector(".show-bio");
       if(panelOpened){
@@ -101,35 +102,6 @@ var lazy;
       window.removeEventListener("keydown", close, false);
     }
 
-    // function open(){
-    //   this.classList.add("show-bio");
-    //   let q = this.querySelector(".product-button");
-    //   bgOverlay.classList.add("background-visible");
-      
-    //   wrapper.addEventListener("click", close, false);
-    //   window.addEventListener("keydown", close, false);
-
-    //     createCloseBtn.bind(this)();
-    //     let img = this.firstElementChild;
-    //     img.setAttribute("src", img.getAttribute("data-src"));
-    // }    
-      // function close(e){
-      //   if(e.keyCode == 27 || e.target.classList.contains("background-overlay") || e.target.classList.contains("red")){
-          
-      //   let panelOpened = document.querySelector(".show-bio");
-      //   panelOpened.classList.remove("show-bio");
-
-      //   bgOverlay.classList.remove("background-visible");
-      //   wrapper.removeEventListener("click", close, false);
-      //   window.removeEventListener("keydown", close, false);
-
-      //   setTimeout(function(){
-      //     panelOpened.scrollTop = 0;
-      //   }, 500);
-          
-      //   }      
-      // }
-    
     function createCloseBtn(){
       if(this.querySelector(".product-button")){
         return;
@@ -143,13 +115,6 @@ var lazy;
       img.setAttribute("src", img.getAttribute("data-src"));
     }
 
-
-    // arr.map(function(item){  
-    //   item.addEventListener("click",function(){
-    //     let bioDetailsDiv = item.parentElement.nextElementSibling;
-    //     open.bind(bioDetailsDiv)();
-    //   }, false);
-    // })
     
 
 
