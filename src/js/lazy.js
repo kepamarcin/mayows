@@ -65,23 +65,24 @@ var lazy;
     //   console.log(bioDetailsDiv);
       
     // }
-    const wrapper = document.querySelector(".wrapper");
+    const wrapper = document.querySelector(".wrapper-people");
+    if(wrapper){
+      wrapper.addEventListener("click", function(e){
+        const productButtons = wrapper.querySelectorAll(".product-button");
+        if( e.target.className === "product-button"){
+          open.bind(e.target.parentElement.nextElementSibling)();
+          
+        }
+        else if(e.keyCode == 27 || e.target.classList.contains("background-overlay") || e.target.classList.contains("red")){
+          
+          close.bind(this)();
+          
+        }
+        else 
+          return;
 
-    wrapper.addEventListener("click", function(e){
-      const productButtons = wrapper.querySelectorAll(".product-button");
-      if( e.target.className === "product-button"){
-        open.bind(e.target.parentElement.nextElementSibling)();
-        
-      }
-      else if(e.keyCode == 27 || e.target.classList.contains("background-overlay") || e.target.classList.contains("red")){
-        
-        close.bind(this)();
-        
-      }
-      else 
-        return;
-
-    }, false);
+      }, false);
+    }
 
     function open(){
       this.classList.add("show-bio");
@@ -89,7 +90,7 @@ var lazy;
       window.addEventListener("keydown", close, false);
       createCloseBtn.bind(this)();
     }
-    
+
     function close(){
       let panelOpened = document.querySelector(".show-bio");
       if(panelOpened){

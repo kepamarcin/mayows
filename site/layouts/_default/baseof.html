@@ -5,7 +5,7 @@
 
   {{ end }}
   <body class="{{ if not .IsHome  }}page{{end}}">
-    <div class="wrapper">
+    <div class="wrapper{{ with .Page.Params.people}}-people{{end}}">
       <span class="background-overlay"></span>
       {{ block "header" . }}
 
