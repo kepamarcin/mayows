@@ -139,10 +139,12 @@
 }
 .product-name{
   text-transform:uppercase;
-  font-weight:normal;
+  /* font-weight:normal; */
+  font-size:var(--m3)em;
 }
 .product-item{
   margin-bottom: calc(var(--m3)*2em);
+  
   & table{
     border-spacing:0;
     width:100%;
@@ -155,6 +157,7 @@
   }
   & th{
     text-align: left;
+    color: color(var(--dark) lightness(35%));
   }
   & td{
     border-bottom: 1px solid color(var(--dark) alpha(50%));
