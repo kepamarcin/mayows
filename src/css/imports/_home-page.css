@@ -160,7 +160,7 @@
     color: color(var(--dark) lightness(35%));
   }
   & td{
-    border-bottom: 1px solid color(var(--dark) alpha(50%));
+    border-bottom: 1px solid color(var(--dark) lightness(80%));
   }
 
 }
