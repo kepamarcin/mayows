@@ -68,8 +68,8 @@ var lazy;
     const wrapper = document.querySelector(".wrapper-people");
     if(wrapper){
       wrapper.addEventListener("click", function(e){
-        const productButtons = wrapper.querySelectorAll(".product-button");
-        if( e.target.className === "product-button"){
+        const productButtons = wrapper.querySelectorAll("button");
+        if( e.target.className === "button margin-top"){
           open.bind(e.target.parentElement.nextElementSibling)();
           
         }
@@ -104,13 +104,13 @@ var lazy;
     }
 
     function createCloseBtn(){
-      if(this.querySelector(".product-button")){
+      if(this.querySelector(".red")){
         return;
       }
       const closeBtn = document.createElement('span');
       const bioWrapper = this.querySelector(".bio-wrapper");
       closeBtn.innerHTML = "Close";
-      closeBtn.classList = "product-button red";
+      closeBtn.classList = "button red";
       bioWrapper.appendChild(closeBtn);
       let img = this.firstElementChild;
       img.setAttribute("src", img.getAttribute("data-src"));

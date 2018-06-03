@@ -113,18 +113,19 @@
         height: .6em;
         left: 50%;
         transform:translate(-50%, -15px );
-        background-color:transparent;
       }
     }
 
     @media (--viewport-medium){
+      font-weight:500;
       visibility: visible; 
-      transform: translateY(0);
+      transform: translateY(-5px);
       text-transform: uppercase;
       /* font-size:calc(var(--unit)*1.0625); */
-      font-weight:var(--font-weight-normal);
+      /* font-weight:var(--font-weight-normal); */
       /* line-height:1.75; */
       color: var(--color-link);
+      /* color: var(--dark-blue); */
       letter-spacing: -.015em;
     }
   }

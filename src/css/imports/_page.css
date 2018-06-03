@@ -14,6 +14,8 @@
       background:url("../images/wave-posterw.jpg");
       background-size: cover;
       background-position: center 85%;
+      box-shadow: inset 0 -5px 10px -3px color(var(--dark) alpha(10%)),
+  inset 0 -3px 5px -3px color(var(--dark) alpha(30%))
       
     }  
   }
@@ -48,7 +50,7 @@
   }
   & .main-content h3{
     font-family:"lingua franca";
-    color:var(--dark);
+    /* color:var(--dark); */
     font-size: 2.0736em;
     letter-spacing: -0.02em;
 
@@ -77,7 +79,7 @@
       margin-right: 10em;
       position: absolute;
       content:"";
-      background-image:url('/images/drop.svg');
+      background-image:url('/images/dropsx2.svg');
       width:.7em;
       height: .7em;
       transform: translate(-30px, 40%);
@@ -85,9 +87,9 @@
       background-size:contain;
     }
     &:nth-child(even){
-      /* color:color(var(--dark) lightness(45%)); */
-      background:linear-gradient(to top, rgba(235,235,235) 0%, #fafafa 20%, #fff 30%, #fff 70%,#fafafa 80%, rgba(235,235,235) 100%);
+      background:linear-gradient(to top, color(var(--dark) lightness(85%)) 0%, color(var(--dark) lightness(90%)) 5%, color(var(--dark) lightness(98%)) 20%, color(var(--dark) lightness(98%)) 85%,color(var(--dark) lightness(90%)) 95%, color(var(--dark) lightness(85%)) 100%);
       border-radius:10px;
+      box-shadow:inset 0 2px 2px -2px color(var(--blue) alpha(20%)), inset 0 -2px 2px -2px color(var(--blue) alpha(20%));
     }
   }
 }
@@ -139,7 +141,7 @@
 }
 .contact-header{
   font-weight: normal;
-  /* text-transform: uppercase; */
+
 }
 .team-container{
   min-height:400px;
@@ -185,7 +187,7 @@
         margin-bottom: 0;
         & a{
           display: block;
-          color: var(--blue);
+          color: var(--dark-blue);
         }
       }
     }
@@ -232,7 +234,8 @@
 .bio-details{
   position: fixed;
   transform:translateX(100%);
-  background-color: color(var(--dark) lightness(90%));
+  background-color: color(var(--dark) lightness(100%));
+  
   z-index: 200;
   transition: all .25s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
   visibility: hidden;
@@ -260,7 +263,7 @@
 
   & .bio-wrapper{
     padding: 1em 1em 2.5em 1em;
-
+    background: linear-gradient(to top, color(var(--dark) lightness(90%)), color(var(--dark) lightness(100%)));
     @media(--viewport-medium){
       padding: 0 2em 2em 2em;
     }
@@ -312,9 +315,7 @@
           text-align: left;
         }
       }
-        
-    }
-    
+    } 
   }
 }
 
@@ -338,35 +339,8 @@
 .main-content{
 
   & h1, & h2, & h3{
-    padding:.5em 0;
-    font-size:1.728em;
-    font-size:var(--m2)em;
-    position: relative;
-    text-align: left;
-    z-index: 1;
-    margin-top: 0;
-    color:var(--blue);
     @media (--viewport-medium){
-      margin-top: 1.414em;
-      font-size:var(--m4)em;
-      margin-left: 0;
-      margin-right: 0;
-      background: transparent;
-      background-color: transparent;
-      padding-left: 0;
-      border-left:none;
-      &::before{
-        content:"";
-        position: absolute;
-        width: 2em;
-        height: 2em;
-        background-color: var(--yellow);
-        top: 3px;
-        left: 0;
-        transform: translate(-40%,0);
-        z-index: -1;
-        border-radius:50%;
-      }
+  
     }
     & a{
       white-space: nowrap;
@@ -400,24 +374,16 @@
   }
 }
 @supports (display: grid) {
-  /* .products-grid{ */
   .products-list{
     display: grid;
-    /* grid-template-columns: 1fr; */
     grid-gap: 10%;
-    /* grid-gap: 50px; */
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
-    /* grid-template-areas: 
-    "product "; */
     @media (--viewport-medium){
-      /* grid-template-columns: 45% 45%; */
-      /* grid-template-areas:  */
-    /* "product product"; */
+
     }
   }
   .product-item{
-    /* grid-area: product; */
     & img{
       display: inherit;
       margin: 0 auto;

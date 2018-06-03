@@ -5,8 +5,11 @@
   --white:#ffffff;
   --black:#000000;
 
+  
   --blue:#0d69b1;
   --dark:#3a3a3a;
+
+  --dark-blue:color(var(--blue) lightness(-21%));
 
   --body-background:color(var(--dark) lightness(90%));
 

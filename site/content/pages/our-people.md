@@ -23,12 +23,12 @@ menu:
           <a href="tel:00000000" class="phone">123456789</a>
           <a href="mailto:sam@mayowatersolutions.com" class="mail">sam@mayowatersolutions.com</a>
         </p>
-        <span class="product-button" data-letters="Read Bio">Read bio</span>
+        <span class="button margin-top" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
         <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://picsum.photos/450/250">
         <div class="bio-wrapper">
-          <h3 class="">Sam Murdock</h3>
+          <h3 class="bioname">Sam Murdock</h3>
           <p class="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus sit amet ligula ac gravida. Curabitur condimentum nulla ut tellus elementum, ut tempor risus venenatis. Nullam volutpat venenatis tincidunt.</p>
             <p class="">In purus nisi, fermentum non dictum id, aliquam eget risus. Nam finibus condimentum nulla at bibendum. In ut nisi dictum neque fermentum vestibulum. Integer id justo vel sapien feugiat congue vitae a lacus. Nam ac vestibulum lectus. 
@@ -53,12 +53,12 @@ menu:
           <a href="tel:00000000" class="phone">123456789</a>
           <a href="mailto:geoff@mayowatersolutions.com" class="mail">geoff@mayowatersolutions.com</a>
         </p>
-        <span class="product-button" data-letters="Read Bio">Read bio</span>
+        <span class="button margin-top" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
         <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://picsum.photos/450/250">
         <div class="bio-wrapper">
-          <h3 class="">Geoff Gosden</h3>
+          <h3 class="bioname">Geoff Gosden</h3>
           <p class="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus sit amet ligula ac gravida. Curabitur condimentum nulla ut tellus elementum, ut tempor risus venenatis. Nullam volutpat venenatis tincidunt.</p>
             <p class="">In purus nisi, fermentum non dictum id, aliquam eget risus. Nam finibus condimentum nulla at bibendum. In ut nisi dictum neque fermentum vestibulum. Integer id justo vel sapien feugiat congue vitae a lacus. Nam ac vestibulum lectus. 
