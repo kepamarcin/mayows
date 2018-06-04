@@ -4,6 +4,9 @@
      background:linear-gradient(to bottom, rgba(170,170,170,1), rgba(255,255,255,1) 100%);
       background-size: 100% 100%;
       background-repeat: no-repeat;
+      box-shadow: inset 0 -5px 10px -3px color(var(--dark) alpha(10%)),
+  inset 0 -3px 5px -3px color(var(--dark) alpha(30%));
+  padding-bottom: 1em;
     @media (--viewport-large){
       min-height:auto;
       position: relative;
@@ -15,7 +18,7 @@
       background-size: cover;
       background-position: center 85%;
       box-shadow: inset 0 -5px 10px -3px color(var(--dark) alpha(10%)),
-  inset 0 -3px 5px -3px color(var(--dark) alpha(30%))
+  inset 0 -3px 5px -3px color(var(--dark) alpha(30%));
       
     }  
   }
@@ -221,11 +224,12 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: color(var(--dark) alpha(90%));
+  background-color: color(var(--dark-blue) alpha(93%));
   top: 0;
   left: 0;
   transition: all .4s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
   z-index: 150;
+  
 }
 .background-visible{
   visibility:visible;
@@ -245,6 +249,8 @@
   width:100vw;
   overflow: auto;
   -webkit-overflow-scrolling:touch;
+  box-shadow: inset 5px 0 15px -5px color(var(--dark) alpha(40%)),
+  inset 5px 0 5px -5px color(var(--dark) alpha(50%));
   @media(--viewport-medium){
     height: 100vh;
     width:50vw;

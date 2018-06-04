@@ -146,7 +146,7 @@
 
 .menu-button-c{
   top:var(--unit);
-  right:var(--unit);
+  right:0;
   position: fixed;
   z-index: 101;
   
@@ -154,14 +154,19 @@
 .menu-button{
   cursor: pointer;
   display: inline-block;
-  width:64px;
+  width:54px;
   height: 36px;
   position: relative;
   background-color: color(var(--blue) alpha(30%));
+  background: linear-gradient(to bottom, color(var(--dark) lightness(100%)), color(var(--dark) lightness(80%)));
+  box-shadow: 
+    0 7px 14px -3px color(var(--dark) alpha(30%)), 
+    0 2px 4px 0 color(var(--dark) alpha(40%)), 
+    inset 0 -1px 0 0 color(var(--dark) alpha(24%));
   font-weight: var(--font-weight-bold);
   transition: background-color .5s linear, transform 3s linear .1s;
   overflow: hidden;
-  border-radius:10px;
+  border-radius:999px 0 0 999px;
   & span{
     position: absolute;
     content:"";
@@ -171,7 +176,7 @@
     top: 50%;
     margin-left: -15px;
     margin-top:0;
-    background-color: var(--white);
+    background-color: color(var(--dark) lightness(50%));
     transition:all .5s ease-out .2s;
     transform:translateY(-50%);
   }
@@ -182,9 +187,9 @@
     height: 2px;
     left: 50%;
     top: 50%;
-    margin-left: -15px;
+    margin-left: -12px;
     margin-top:-6px;
-    background-color: var(--white);
+    background-color: color(var(--dark) lightness(50%));
     transition:all .2s ease-out .4s;
     transform:translateY(-50%);
   }
@@ -196,9 +201,9 @@
     height: 2px;
     left: 50%;
     top: 50%;
-    margin-left: -15px;
+    margin-left: -12px;
     margin-top:6px;
-    background-color: var(--white);
+    background-color: color(var(--dark) lightness(50%));
     transition:all .2s ease-out .35s;
     transform:translateY(-50%);
   }

@@ -1,15 +1,15 @@
 @keyframes pop{
   0%{
-    transform:translateY(0);
+    transform:translateX(0);
   }
 
   50%{
-    transform:translateY(-150%) scale(.5);
+    transform:translateX(150%);
   }
   
   100%{
     /* background-color: var(--white); */
-    transform:translateY(0);
+    transform:translateX(0);
   }
 }
 @keyframes ring {

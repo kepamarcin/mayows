@@ -1,5 +1,5 @@
 .footer{
-  background-color: color(var(--dark) lightness(10%));
+  background-color: color(var(--dark-blue) lightness(10.5%));
   padding:  var(--m2)em;
   color:color(var(--dark) lightness(+25%));
   @media (--viewport-medium){
@@ -8,7 +8,7 @@
   & h3{
     text-transform: uppercase;
     font-weight: 300;
-    color: #fff;
+    color: color(var(--dark) lightness(85%));
     margin-bottom: var(--m)em;
   }
   & p {
@@ -18,7 +18,7 @@
     font-family: var(--font-sans);
     & a{
        color:#aaa;
-       color:color(var(--black) lightness(+55%));
+       color:color(var(--dark) lightness(50%));
        font-weight: 400;
        display: inline-flex;
     }
