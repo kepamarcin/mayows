@@ -235,7 +235,7 @@
   position: fixed;
   transform:translateX(100%);
   background-color: color(var(--dark) lightness(100%));
-  
+  background: linear-gradient(to top, color(var(--dark) lightness(90%)) 0%, color(var(--dark) lightness(100%)) 70%);
   z-index: 200;
   transition: all .25s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
   visibility: hidden;
@@ -263,7 +263,7 @@
 
   & .bio-wrapper{
     padding: 1em 1em 2.5em 1em;
-    background: linear-gradient(to top, color(var(--dark) lightness(90%)), color(var(--dark) lightness(100%)));
+    
     @media(--viewport-medium){
       padding: 0 2em 2em 2em;
     }
