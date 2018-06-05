@@ -76,23 +76,32 @@
     list-style:none;
     position: relative;
     margin-right: 1em;
-    padding: .3em .5em;
+    padding: .3em 1em;
     transform: translateX(20px);
     &::before{
-      margin-right: 10em;
+      
       position: absolute;
       content:"";
       background-image:url('/images/dropsx2.svg');
       width:.7em;
       height: .7em;
-      transform: translate(-30px, 40%);
+      transform: translate(-40px, 40%);
       background-repeat:no-repeat;
       background-size:contain;
     }
     &:nth-child(even){
-      background:linear-gradient(to top, color(var(--dark) lightness(85%)) 0%, color(var(--dark) lightness(90%)) 5%, color(var(--dark) lightness(98%)) 20%, color(var(--dark) lightness(98%)) 85%,color(var(--dark) lightness(90%)) 95%, color(var(--dark) lightness(85%)) 100%);
-      border-radius:10px;
-      box-shadow:inset 0 2px 2px -2px color(var(--blue) alpha(20%)), inset 0 -2px 2px -2px color(var(--blue) alpha(20%));
+      /* background:linear-gradient(to top, color(var(--dark) lightness(85%)) 0%, color(var(--dark) lightness(90%)) 5%, color(var(--dark) lightness(98%)) 20%, color(var(--dark) lightness(98%)) 85%,color(var(--dark) lightness(90%)) 95%, color(var(--dark) lightness(85%)) 100%); */
+      background: linear-gradient(to bottom, color(var(--dark) lightness(100%)), color(var(--dark) lightness(80%)));
+      border-radius:0;
+      color:color(var(--dark) lightness(30%));
+      @media (--viewport-medium){
+      border-radius:999px;
+      }
+      box-shadow:
+      inset 0 3px 5px -3px color(var(--dark) alpha(10%)),
+      inset 0 5px 10px -5px color(var(--dark) alpha(5%)), 
+      inset 0 -3px 5px -3px color(var(--dark) alpha(30%)),
+      inset 0 -5px 10px -5px color(var(--dark) alpha(10%));
     }
   }
 }

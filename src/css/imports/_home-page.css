@@ -25,7 +25,7 @@ h2:not(.product-name), h3:not(.product-name, .name, .bioname), h4:not(.product-n
   text-align:center;
   @media (--viewport-medium){
     text-align:left;
-    &::before {
+    /* &::before {
       position: absolute;
       content:"";
       background-image:url('/images/dropsx2.svg');
@@ -35,7 +35,7 @@ h2:not(.product-name), h3:not(.product-name, .name, .bioname), h4:not(.product-n
       background-repeat:no-repeat;
       background-size:contain;
       border-radius: 50%;
-    }
+    } */
   }
 }
 .section-image{
