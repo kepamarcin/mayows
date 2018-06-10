@@ -8,12 +8,14 @@ menu:
 ---
 ### Water Engineering Solutions:
 
+- Master Planning of Water and Sanitary Services
 -	Potable Water Design – Reverse Osmosis – Conventional Water Treatment – Ultrafiltration
--	Municipal Waste Water – Activated Sludge Treatment – Nutrient Removal – Tertiary Treatment
+-	Municipal Waste Water – Collection, Preliminary Treatment – Activated Sludge Treatment – Nutrient Removal – Tertiary Treatment
 -	Industrial Waste Water – Oil Separation – Metals Removal – Ion Exchange – Reverse Osmosis
--	Water Distribution – Potable and Irrigation water modelling
--	Sewer Collection Design
+-	Water Distribution – Potable and Irrigation water modelling – Sewer Collection Design
+- Water Recycling and Reuse
 -	Pumping Station Design
+- Dams, Reservoirs and Sanitary Services
 
 ### Project Management:
 
@@ -21,6 +23,7 @@ From Preliminary Design to Project Hand-Over, MWS can provide full project manag
 
 -	Design Management
 -	Construction Management
+- Commissioning, Supervision and Quality Assurance
 -	Health and Safety Management
 
 ### Procurement:
