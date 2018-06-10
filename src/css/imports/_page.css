@@ -25,9 +25,11 @@
   & .page-title{
     font-size: calc(var(--m4) * var(--m4)em);
     margin-bottom:calc(var(--m)/8)em ;
+    text-align: center;
     & span{
       font-weight: 300;
       font-size: 48px;
+      text-align: left;
     }
   }
   & .page-description{

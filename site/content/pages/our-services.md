@@ -12,7 +12,7 @@ menu:
 -	Potable Water Design – Reverse Osmosis – Conventional Water Treatment – Ultrafiltration
 -	Municipal Waste Water – Collection, Preliminary Treatment – Activated Sludge Treatment – Nutrient Removal – Tertiary Treatment
 -	Industrial Waste Water – Oil Separation – Metals Removal – Ion Exchange – Reverse Osmosis
--	Water Distribution – Potable and Irrigation water modelling – Sewer Collection Design
+-	Water Distribution – Potable and Irrigation water modelling
 - Water Recycling and Reuse
 -	Pumping Station Design
 - Dams, Reservoirs and Sanitary Services
