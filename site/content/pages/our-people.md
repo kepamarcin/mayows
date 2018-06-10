@@ -5,7 +5,7 @@ draft: false
 people: true
 menu:
   main:
-    weight: 4
+    weight: 5
 ---
 
 <div class="team-container">

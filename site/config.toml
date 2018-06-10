@@ -22,7 +22,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
     identifier = "reverse osmosis"
     name = "reverse osmosis"
     url = "/products/"
-    weight = 3
+    weight = 4
   
 
 
