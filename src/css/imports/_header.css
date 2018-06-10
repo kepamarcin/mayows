@@ -1,7 +1,4 @@
-/*logo fill*/
-#logo .cls-1, #logo.cls-2{
-  /* fill:var(--dark-blue) !important; */
-}
+
 .branding-top{
   padding-top:var(--unit);
   display: flex;
