@@ -58,8 +58,10 @@
   & .title-description{
     font-size: calc(var(--m4)/2)em ;
     font-family: var(--font-sans);
+    color: var(--white);
     @media(--viewport-medium){
       width:75%;
+      color: var(--dark);
     }
   }
   & .lead-container{
