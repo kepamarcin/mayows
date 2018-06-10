@@ -1,15 +1,9 @@
 
-.lead-container{
-  margin:var(--m4)em var(--m2)em;
-  position: relative;
-  font-style: italic;
-  font-size: var(--m)em;
+/* .lead-container{
+ 
   text-align: center;
-    @media (--viewport-medium){
-      margin-top: 3em;
-      font-size: var(--m2)em;
-    }
-}
+    
+} */
 .section{
   margin: var(--m)em auto;
 }
@@ -25,17 +19,6 @@ h2:not(.product-name), h3:not(.product-name, .name, .bioname), h4:not(.product-n
   text-align:center;
   @media (--viewport-medium){
     text-align:left;
-    /* &::before {
-      position: absolute;
-      content:"";
-      background-image:url('/images/dropsx2.svg');
-      width:.7em;
-      height: .7em;
-      transform: translate(-40px, 30%);
-      background-repeat:no-repeat;
-      background-size:contain;
-      border-radius: 50%;
-    } */
   }
 }
 .section-image{
@@ -67,9 +50,9 @@ h2:not(.product-name), h3:not(.product-name, .name, .bioname), h4:not(.product-n
 }
 .products{
   background:linear-gradient( to top, color(var(--dark) alpha(22%)) 0%, color(var(--dark) alpha(7%)) 100%);
-  margin-top: 3.5em;
-  box-shadow: inset 0 5px 15px -5px color(var(--dark) alpha(10%)),
-              inset 0 2px 5px -2px color(var(--dark) alpha(20%));
+  /* margin-top: 3.5em; */
+  /* box-shadow: inset 0 5px 15px -5px color(var(--dark) alpha(10%)), */
+              /* inset 0 2px 5px -2px color(var(--dark) alpha(20%)); */
 }
 .product-list{
   display:flex;
