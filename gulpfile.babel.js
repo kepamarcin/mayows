@@ -12,19 +12,42 @@ import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
+//image compression
+import imagemin from "gulp-imagemin";
+import imageminPngquant from "imagemin-pngquant";
+import imageminJpegRecompress from "imagemin-jpeg-recompress";
+
+var IMAGES_PATH = './site/static/images/*.*';
+
 const browserSync = BrowserSync.create();
 
 // Hugo arguments
 const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
 const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
 
+// images
+
+gulp.task('images', function (){
+  return gulp.src(IMAGES_PATH)
+    .pipe(imagemin(
+      [
+        imagemin.jpegtran(),
+        imagemin.optipng(),
+        imagemin.svgo(),
+        imageminPngquant(),
+        imageminJpegRecompress()
+      ]
+    ))
+    .pipe(gulp.dest("./dist/images"));
+});
+
 // Development tasks
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["css", "js", "fonts"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build", ["css", "js", "fonts", "images"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["css", "js", "fonts", "images"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
@@ -61,7 +84,7 @@ gulp.task('fonts', () => (
 ));
 
 // Development server with browsersync
-gulp.task("server", ["hugo", "css", "js", "fonts"], () => {
+gulp.task("server", ["hugo", "css", "js", "fonts", "images"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
