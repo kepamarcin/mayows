@@ -9,7 +9,7 @@ body{
   background: color(var(--dark) lightness(97%));
   color: var(--dark);
   line-height: 1.5;
-  
+  text-rendering: optimizespeed;
 }
 .fonts-stage-1 body{
   font-family: var(--font-serif-optimized);
@@ -78,26 +78,11 @@ img{
   /* position: relative; */
 }
 
-.highlight{
-  line-height: 1.3;
-  font-family: var(--font-system);
-  font-size: calc(var(--unit)*1.0667);
-  font-weight:400;
-  padding: calc(var(--unit)*1.2);
-  background: linear-gradient(to right, color(var(--dark) lightness(60%)), transparent 1.5%);
-    background-color: color(var(--dark) lightness(93%));
-    border-left: calc(var(--unit)/6) solid var(--blue);
-}
 .font-stage-2 .highlight{
   font-family: var(--font-sans);
 }
 .icon{
   margin-right:6px;
-  &.icon-drop svg{
-    /* display: block; */
-    width: var(--unit);
-    height: var(--unit);
-  }
 }
 .buy-data{visibility: hidden; opacity: 0;transition: all .3s ease;}
 .show{visibility: visible; opacity: 1;}

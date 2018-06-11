@@ -63,7 +63,11 @@
   color:var(--dark);
   z-index:5;
   margin-top: auto;
+  margin-bottom:2em;
   text-align:center;
+  @media (--viewport-medium){
+    margin: auto 0;
+  }
   @media (--viewport-large){
     margin-bottom: 6em;
   }
@@ -80,11 +84,11 @@
     letter-spacing: -.069em;
     line-height: 1;
     @media (--viewport-large){
-      font-weight: 400;
+      /* font-weight: 400; */
       font-size: calc(2.488/1.44*2.488em);
     }
     @media (--viewport-xlarge){
-      font-weight: 600;
+      /* font-weight: 600; */
       font-size: calc(2.488/1.2*2.488em);
     }
   }
