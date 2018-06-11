@@ -6,9 +6,6 @@ body{
   /* font-family: var(--font-system); */
   font-family: var(--font-sans);
   font-size: var(--font-size-base);
-  /* background: var(--body-background); */
-  /* background: color(var(--dark) lightness(90%)); */
-  background: #fff;
   background: color(var(--dark) lightness(97%));
   color: var(--dark);
   line-height: 1.5;
