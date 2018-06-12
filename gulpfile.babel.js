@@ -17,7 +17,7 @@ import imagemin from "gulp-imagemin";
 import imageminPngquant from "imagemin-pngquant";
 import imageminJpegRecompress from "imagemin-jpeg-recompress";
 
-var IMAGES_PATH = './site/static/images1/*.*';
+var IMAGES_PATH = './site/static/images/*.*';
 
 const browserSync = BrowserSync.create();
 
