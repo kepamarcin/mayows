@@ -65,6 +65,7 @@ var lazy;
     //   console.log(bioDetailsDiv);
       
     // }
+    const body = document.querySelector("body");
     const wrapper = document.querySelector(".wrapper-people");
     if(wrapper){
       wrapper.addEventListener("click", function(e){
@@ -83,8 +84,14 @@ var lazy;
 
       }, false);
     }
-
+    function addNoScroll(){
+      body.classList.add("no-scroll");
+    }
+    function removeNoScroll(){
+      body.classList.remove("no-scroll");
+    }
     function open(){
+      addNoScroll();
       this.classList.add("show-bio");
       bgOverlay.classList.add("background-visible");
       window.addEventListener("keydown", close, false);
@@ -92,6 +99,7 @@ var lazy;
     }
 
     function close(){
+      removeNoScroll();
       let panelOpened = document.querySelector(".show-bio");
       if(panelOpened){
         panelOpened.classList.remove("show-bio");
@@ -101,6 +109,8 @@ var lazy;
       }
       bgOverlay.classList.remove("background-visible");
       window.removeEventListener("keydown", close, false);
+      console.log(this);
+      
     }
 
     function createCloseBtn(){
@@ -110,10 +120,18 @@ var lazy;
       const closeBtn = document.createElement('span');
       const bioWrapper = this.querySelector(".bio-wrapper");
       closeBtn.innerHTML = "Close";
-      closeBtn.classList = "button red";
-      bioWrapper.appendChild(closeBtn);
-      let img = this.firstElementChild;
+      closeBtn.classList = "button red button-sticky";
+      let img = this.firstElementChild.firstElementChild;
       img.setAttribute("src", img.getAttribute("data-src"));
+      this.firstElementChild.insertBefore(closeBtn, img);
+      
+      this.addEventListener("scroll", function(){
+        let divTop = this.firstElementChild.getBoundingClientRect().top;
+        let actualTop = (-1)*divTop + 10;
+        closeBtn.style.top = actualTop +"px";
+      }, false);
+      
+      
     }
 
     

@@ -41,6 +41,13 @@
    background: linear-gradient(to top, red, darkred);
   }
 }
+.button-sticky{
+  position: absolute;
+  right:0;
+  top:10px;
+  border-radius: 999px 0 0 999px;
+  padding-right: 1em;
+}
 .colored{
   background: linear-gradient(to bottom, color(var(--blue) lightness(+40%)), color(var(--blue) lightness(-10%)));
   color:#fff;

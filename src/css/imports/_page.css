@@ -273,7 +273,7 @@
   background-color: color(var(--dark-blue) alpha(93%));
   top: 0;
   left: 0;
-  transition: all .4s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
+  transition: all .5s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
   z-index: 150;
   
 }
@@ -287,7 +287,8 @@
   background-color: color(var(--dark) lightness(100%));
   background: linear-gradient(to top, color(var(--dark) lightness(90%)) 0%, color(var(--dark) lightness(100%)) 70%);
   z-index: 200;
-  transition: all .25s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s;
+  /* transition: all .25s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s; */
+  transition: transform .25s ease-out  .2s, visibility .25s ease-out  .2s;
   visibility: hidden;
   top: 0;
   right: 0;
