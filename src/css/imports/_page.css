@@ -282,13 +282,13 @@
   opacity:1;
 }
 .bio-details{
+  opacity: 0;
   position: fixed;
   transform:translateX(100%);
   background-color: color(var(--dark) lightness(100%));
   background: linear-gradient(to top, color(var(--dark) lightness(90%)) 0%, color(var(--dark) lightness(100%)) 70%);
   z-index: 200;
-  /* transition: all .25s cubic-bezier(0.56, 0.01, 0.24, 1.01)  0s; */
-  transition: transform .25s ease-out  .2s, visibility .25s ease-out  .2s;
+  transition: transform .4s ease-out  0s, visibility .25s ease-out  .2s, opacity .5s ease-out;
   visibility: hidden;
   top: 0;
   right: 0;
@@ -318,7 +318,7 @@
     padding: 1em 1em 2.5em 1em;
     
     @media(--viewport-medium){
-      padding: 0 2em 2em 2em;
+      padding: 0 2em 2em 1em;
     }
     & ul{
       padding-left:0;
@@ -336,7 +336,6 @@
         }
       }
       & li:nth-child(odd){
-        /* box-shadow:none; */
         background:none;
       }
     }
@@ -346,6 +345,7 @@
 .show-bio{
   transform:translateX(0);
   visibility: visible;
+  opacity:1;
 }
 @supports (display: grid) {
   .product{
