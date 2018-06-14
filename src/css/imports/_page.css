@@ -265,9 +265,8 @@
   }
 }
 .background-overlay{
-  transform:translateX(100%);
   visibility:hidden;
-  /* opacity:0; */
+  opacity:0;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -279,9 +278,12 @@
   
 }
 .background-visible{
-  transform:translateX(0);
-  visibility:visible;
-  /* opacity:1; */
+   @media(--viewport-medium){
+    transform:translateX(0);
+    visibility:visible;
+    opacity:1;
+   }
+  
 }
 .bio-details{
   position: fixed;
