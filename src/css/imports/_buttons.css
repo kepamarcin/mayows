@@ -34,6 +34,7 @@
     transform:translateY(0);
   }
 }
+
 .red{
   background: linear-gradient(to bottom, red, darkred);
   color:#fff;
@@ -47,6 +48,7 @@
   top:10px;
   border-radius: 999px 0 0 999px;
   padding-right: 1em;
+  
 }
 .colored{
   background: linear-gradient(to bottom, color(var(--blue) lightness(+40%)), color(var(--blue) lightness(-10%)));

@@ -26,9 +26,7 @@ menu:
         <span class="button margin-top" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
-        <div style="position:relative">    
-          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/images/samm450.jpg">
-        </div>
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/images/samm450.jpg">
         <div class="bio-wrapper">
           <h3 class="bioname">Sam Murdock</h3>
           <p class="">
@@ -43,7 +41,6 @@ menu:
               <li>The Greater Karachi Water Supply Scheme</li><br>
             to name but a sample.
             </ul>
-          
           <p class="">As someone who has spent his professional career in the environmental sector, Sam is passionate about ensuring clean and safe water and sanitary services.
           </p>
         </div>
@@ -67,9 +64,7 @@ menu:
         <span class="button margin-top" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
-      <div style="position:relative">
         <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://picsum.photos/450/250">
-        </div>
         <div class="bio-wrapper">
           <h3 class="bioname">Geoff Gosden</h3>
           <p class="">
