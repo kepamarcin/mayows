@@ -21,7 +21,7 @@ menu:
       <div class="contact">
         <p class="contact-details">
           <a href="tel:00000000" class="phone">123456789</a>
-          <a href="mailto:sam@mayowatersolutions.com" class="mail">sam@mayowatersolutions.com</a>
+          <a href="mailto:s.murdock@mayowatersolutions.com" class="mail">s.murdock@mayowatersolutions.com</a>
         </p>
         <span class="button margin-top" data-letters="Read Bio">Read bio</span>
       </div>
@@ -39,7 +39,7 @@ menu:
               <li>Wakra Logistical City Infrastructural Development, Qatar</li>
               <li>Elsham Water Supply Scheme (Anglian Water), UK</li>
               <li>The Greater Karachi Water Supply Scheme</li><br>
-            to name but a sample.
+            <span style="margin-left:23px">to name but a sample.</span>
             </ul>
           <p class="">As someone who has spent his professional career in the environmental sector, Sam is passionate about ensuring clean and safe water and sanitary services.
           </p>
@@ -59,7 +59,7 @@ menu:
       <div class="contact">
         <p class="contact-details">
           <a href="tel:00000000" class="phone">123456789</a>
-          <a href="mailto:geoff@mayowatersolutions.com" class="mail">geoff@mayowatersolutions.com</a>
+          <a href="mailto:g.gosden@mayowatersolutions.com" class="mail">g.gosden@mayowatersolutions.com</a>
         </p>
         <span class="button margin-top" data-letters="Read Bio">Read bio</span>
       </div>
