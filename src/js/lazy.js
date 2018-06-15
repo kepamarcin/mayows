@@ -16,10 +16,11 @@ var lazy;
     let arr = Array.from(bioBtn);
     let scrollandler;
     const wrapper = document.querySelector(".wrapper-people");
-    const body = wrapper.parentElement;
-    const bgOverlay = wrapper.firstElementChild;
+    const body = document.querySelector("body");
+    const bgOverlay = document.querySelector(".background-overlay");
 
     if(wrapper){
+      
       wrapper.addEventListener("click", function(e){
         const productButtons = wrapper.querySelectorAll("button");
         if( e.target.className === "button margin-top"){

@@ -10,7 +10,9 @@ import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
+import cssnano from "gulp-cssnano";
 import webpackConfig from "./webpack.conf";
+
 
 //image compression
 import imagemin from "gulp-imagemin";
@@ -53,9 +55,10 @@ gulp.task("build-preview", ["css", "js", "fonts", "images"], (cb) => buildSite(c
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
     .pipe(plumber())
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
-    .pipe(sourcemaps.write('.'))
+    // .pipe(sourcemaps.write('.'))
+    .pipe(cssnano())
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
