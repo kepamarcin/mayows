@@ -4,10 +4,9 @@
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
 /
-  Link: <{{ "css/style.css" | relURL }}>; rel=preload; as=style
+  Link: <{{ "css/main.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "fonts/autor%20medium.woff2" | relURL }}>; rel=preload; as=font
   Link: <{{ "fonts/autor%20bold.woff2" | relURL }}>; rel=preload; as=font
-  Link: <{{ "fonts/autor%20light.woff2" | relURL }}>; rel=preload; as=font
 /images/*
   Cache-Control: public, max-age=1000
 /css/*
