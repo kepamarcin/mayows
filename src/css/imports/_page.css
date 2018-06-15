@@ -115,7 +115,8 @@
     margin-right: 1em;
     padding: .3em 1em;
     transform: translateX(20px);
-    background:color(var(--dark) lightness(92%));
+    /* background:color(var(--dark) lightness(92%)); */
+    background:none;
     &::before{
       
       position: absolute;
@@ -128,10 +129,11 @@
       background-size:contain;
     }
     &:nth-child(odd){
-      background: linear-gradient(to bottom, color(var(--dark) lightness(100%)), color(var(--dark) lightness(80%)));
+      /* background: linear-gradient(to bottom, color(var(--dark) lightness(100%)), color(var(--dark) lightness(80%))); */
       border-radius:0;
       color:color(var(--dark) lightness(30%));
-      background:var(--white);
+      /* background:var(--white); */
+      background:none;
       @media (--viewport-medium){
         /* border-radius:999px; */
       }
