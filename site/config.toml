@@ -25,4 +25,17 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
     weight = 4
   
 
+[outputs]
+home = [ "HTML", "HEADERS" ]
 
+[mediaTypes]
+[mediaTypes."text/netlify"]
+suffix = ""
+delimiter = ""
+
+[outputFormats]
+[outputFormats.HEADERS]
+mediatype = "text/netlify"
+baseName = "_headers"
+isPlainText = true
+notAlternative = true
