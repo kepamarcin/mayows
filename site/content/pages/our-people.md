@@ -23,7 +23,7 @@ menu:
           <a href="tel:00000000" class="phone">123456789</a>
           <a href="mailto:s.murdock@mayowatersolutions.com" class="mail">s.murdock@mayowatersolutions.com</a>
         </p>
-        <span class="button margin-top" data-letters="Read Bio">Read bio</span>
+        <span class="button margin-top with-text" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
         <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/images/samm450.jpg">
@@ -61,7 +61,7 @@ menu:
           <a href="tel:00000000" class="phone">123456789</a>
           <a href="mailto:g.gosden@mayowatersolutions.com" class="mail">g.gosden@mayowatersolutions.com</a>
         </p>
-        <span class="button margin-top" data-letters="Read Bio">Read bio</span>
+        <span class="button margin-top with-text" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
         <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://picsum.photos/450/250">
