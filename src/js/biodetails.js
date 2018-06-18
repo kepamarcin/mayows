@@ -17,6 +17,8 @@ var biodetails;
     let scrollandler;
     let touchStartX = 0;
     let touchEndX = 0;
+    let touchStartY = 0;
+    let touchEndY = 0;
     let touchEndHandler;
     let touchStartHandler;
     const wrapper = document.querySelector(".wrapper-people");
@@ -59,19 +61,22 @@ var biodetails;
     function touchStartListener(){
       touchStartHandler = function(e){
         touchStartX = e.changedTouches[0].clientX;
+        touchStartY = e.changedTouches[0].clientY;
       }
       this.addEventListener("touchstart", touchStartHandler, false);
     }
     function touchEndListener(){
       touchEndHandler = function(e){
         touchEndX =  e.changedTouches[0].clientX;
+        touchEndY =  e.changedTouches[0].clientY;
         handleGesure();
       }
       this.addEventListener("touchend", touchEndHandler, false);
       
     }
     function handleGesure(){
-      if (touchEndX - touchStartX > 50) {
+      if ((touchEndX - touchStartX > 50) && (touchEndY - touchStartY >-15) && (touchEndY - touchStartY < 15) ) {
+
         close();
       }
     }
