@@ -16,7 +16,7 @@ menu:
     <div class="bio">
       <h3 class="name">Sam Murdock</h3>
       <p class="position">
-        Company Director
+        Managing Director
       </p>
       <div class="contact">
         <p class="contact-details">
@@ -29,8 +29,9 @@ menu:
         <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/images/samm450.jpg">
         <div class="bio-wrapper">
           <h3 class="bioname">Sam Murdock</h3>
-          <p class="">
-            Sam is the Managing Director of Mayo Projects. He has nearly 30 years of work experience as Director, Engineer and Project Manager in multi-disciplinary construction projects in Ireland, the UK, and Internationally. Prior to setting up his current company, Sam worked for multi-national world leading, engineering consultancy organizations, in the water sector.</p>
+          <p class="details-position">
+            Sam is the Managing Director of Mayo Projects.</p> 
+            <p>He has nearly 30 years of work experience as Director, Engineer and Project Manager in multi-disciplinary construction projects in Ireland, the UK, and Internationally. Prior to setting up his current company, Sam worked for multi-national world leading, engineering consultancy organizations, in the water sector.</p>
             <p class="">Sam has a wide range of expertise, specifically in the water and environment sector. He has overtaken projects such as WWTP, industrial water treatment, Water supply schemes, sludge, and many more. Key projects he has been involved in include:</p>
             <ul> 
               <li>Al Khor Sewage Treatment Plant Extension, Qatar</li>
@@ -54,7 +55,7 @@ menu:
     <div class="bio">
       <h3 class="name">Geoff Gosden</h3>
       <p class="position">
-        Company Director
+        Director
       </p>
       <div class="contact">
         <p class="contact-details">
@@ -67,11 +68,26 @@ menu:
         <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://picsum.photos/450/250">
         <div class="bio-wrapper">
           <h3 class="bioname">Geoff Gosden</h3>
-          <p class="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus sit amet ligula ac gravida. Curabitur condimentum nulla ut tellus elementum, ut tempor risus venenatis. Nullam volutpat venenatis tincidunt.</p>
-            <p class="">In purus nisi, fermentum non dictum id, aliquam eget risus. Nam finibus condimentum nulla at bibendum. In ut nisi dictum neque fermentum vestibulum. Integer id justo vel sapien feugiat congue vitae a lacus. Nam ac vestibulum lectus. 
+          <p class="details-position">
+            Geoff is a Director of Mayo Projects.</p> 
+            <p>He has over 30 years experience as Director, Engineer and Project Manager in design, construction and operations in Australia, Scotland, India, Bulgaria and Qatar.</p>
+            <p>Prior to setting up his current company, Geoff worked for multi-national world leading, engineering consultancies and an international water utility company.</p>
+            <p class="">Geoff has a wide range of expertise across a range of disciplines and more specifically in the water and environment sector including operations.</p>
+            <p> He has overseen projects such as design, construction, commissioning and operation of major potable water treatment plants including reverse osmosis, water and wastewater transmission pipelines and pumping stations, water reticulation, domestic sewage collection and treatment, sludge handling, industrial water and waste water treatment, dam inspection and rehabilitation, and many more.  
           </p>
-          <p class="">Fusce eget dui odio. Proin rhoncus massa id justo hendrerit facilisis. Sed venenatis justo nulla, at tempus ligula imperdiet ac. 
+          <p>Some examples of major water and environmental projects he has been involved in include:</p>
+          <ul> 
+              <li>Southern Regional Water Supply Scheme, Queensland Australia</li>
+              <li>Sewer mining for reuse, South Australia</li>
+              <li>Storm Water Collection, treatment and Aquifer recharge project, South Australia</li>
+              <li>Industrial Storm Water Collection, treatment and reuse, Tasmania, Australia</li>
+              <li>Water recycling APM Paper Mill, Tasmania</li>
+              <li>First Privately owned and Operated water supply scheme in India</li>
+              <li>PPP waste water treatment schemes throughout Scotland</li>
+              <li>Duhail Umm Qarn Water Supply Qatar</li>
+              <li>Doha North sewage treatment plant Qatar</li>
+            </ul>
+          <p class="">As someone who has spent his professional career in the development of Infrastructure for Industry and the community, Geoff is Keen to pass on his vast knowledge to ensure clean and safe water and sanitary services are available to all. 
           </p>
         </div>
       </div>  

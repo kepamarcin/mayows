@@ -242,6 +242,11 @@
         }
       }
     }
+  & .details-position{
+    font-family:var(--font-serif);
+    color:var(--dark-blue);
+    font-weight:600;
+  }
   }
 }
 .product-button.red{
@@ -321,10 +326,6 @@
 
   & .bio-wrapper{
     padding: 1em 1em 2em 1em;
-    
-    /* @media(--viewport-medium){
-      padding: 0 2em 2em 1em;
-    } */
     & ul{
       padding-left:0;
       display: block;
@@ -339,7 +340,7 @@
         transform: translateY(0);
         margin-left: 20px;
         &::before{
-          transform: translate(-20px, 40%);
+          transform: translate(-20px, 45%);
         }
       }
       & li:nth-child(odd){

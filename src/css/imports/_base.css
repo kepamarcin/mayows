@@ -55,9 +55,7 @@ p:not(.branding-name){
 a{ 
   /* color:var(--color-nav-link); */
   text-decoration:none;
-  /* &:hover{
-    color:color(var(--color-nav-link) blackness(+50%));
-  } */
+  word-break: break-all;
 }
 .container{
   max-width: 68em;
