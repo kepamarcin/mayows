@@ -128,7 +128,7 @@
   z-index: -1;
   width:100%;
   & .image-background{
-    background:url("../images/water-wave-min.jpg");
+    background:url("../images/water-wave.jpg");
     background-position: center center;
     width:100%;
     height: 100vh;
