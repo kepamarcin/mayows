@@ -4,8 +4,8 @@
   {{ block "head" . }}
 
   {{ end }}
-  <body class="{{ if not .IsHome  }}page{{end}}" {{ if not .Page.Params.people}}id="barba-wrapper"{{end}}>
-    <div class="wrapper{{ with .Page.Params.people}}-people{{end}} {{ if not .Page.Params.people}} barba-container {{end}}">
+  <body class="{{ if not .IsHome  }}page{{end}}">
+    <div class="wrapper{{ with .Page.Params.people}}-people{{end}}">
       <span class="background-overlay"></span>
       {{ block "header" . }}
 
