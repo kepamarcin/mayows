@@ -64,12 +64,16 @@
 
     video.poster = "images/wave-poster.jpg";
     video.src = "video/wave" + width + ".mp4";
-    video.autoplay = true;
+    // video.autoplay = true;
     video.muted = true;
     video.loop = true;
     video.setAttribute("playsinline", "");
     node.appendChild(video);
     node.childNodes[1].style.display = "none";
+    let vid document.getElementsByTagName("video");
+    vid.stop();
+    vid.play();
+
   }
   if (width >= 992 && width <= 1400) {
     loadVideo(720);
