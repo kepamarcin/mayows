@@ -13,7 +13,9 @@
     {{ $currentNode := . }}
     {{ range .Site.Menus.main }}
     <li>
-			<a href="{{.URL}}"{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}class="is-active"{{end}}>{{ .Name }}</a></li>
+			<a href="{{.URL}}" 
+			class="link {{ if  eq .Name "Our People" }}no-barba{{ end}}{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} is-active{{end}}">{{ .Name }}</a>
+		</li>
 		{{ end }}
 	</ul>
 </nav>
