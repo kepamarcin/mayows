@@ -252,10 +252,23 @@
     & .contact{
       & .contact-details{
         margin-bottom: 0;
-        & a{
-          display: block;
+        & a, & svg{
+          /* display: block; */
+          font-size:17px;
           color: var(--dark-blue);
+          
         }
+        & svg {
+          fill: color(var(--dark-blue) lightness(25%));
+          width:20px;
+          margin-right:10px;
+        }
+        & .contact-data{
+          padding: 0;
+        }
+      }
+      & .button{
+        margin-top: var(--m2)em;
       }
     }
   & .details-position{

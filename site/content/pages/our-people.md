@@ -19,14 +19,15 @@ menu:
         Managing Director
       </p>
       <div class="contact">
-        <p class="contact-details">
-          <a href="tel:00000000" class="phone">123456789</a>
-          <a href="mailto:s.murdock@mayowatersolutions.com" class="mail">s.murdock@mayowatersolutions.com</a>
-        </p>
+        <div class="contact-details">
+          <p class="contact-data"><a href="tel:+97433731378" class="phone"><svg class="icon"><use xlink:href="#mobile" /></svg>+974 33 73 13 78</a>
+          <a href="mailto:s.murdock@mayowatersolutions.com" class="phone"><svg class="icon"><use xlink:href="#mail" /></svg>s.murdock@mayowatersolutions.com</a></p>
+          <!-- <a href="mailto:s.murdock@mayowatersolutions.com" class="mail">s.murdock@mayowatersolutions.com</a> -->
+        </div>
         <span class="button margin-top with-text" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
-        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/images/samm450.jpg">
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/images/samm450.jpg" alt="Sam Murdock" title="Sam Murdock">
         <div class="bio-wrapper">
           <h3 class="bioname">Sam Murdock</h3>
           <p class="details-position">
@@ -50,7 +51,7 @@ menu:
   </div>
   <div class="member">
     <div class="image">
-      <img src="https://picsum.photos/150/150" alt="">
+      <img src="images/geoff150.jpg" title="Geoff Gosden" alt="Geoff Gosden">
     </div>
     <div class="bio">
       <h3 class="name">Geoff Gosden</h3>
@@ -58,14 +59,16 @@ menu:
         Director
       </p>
       <div class="contact">
-        <p class="contact-details">
-          <a href="tel:00000000" class="phone">123456789</a>
-          <a href="mailto:g.gosden@mayowatersolutions.com" class="mail">g.gosden@mayowatersolutions.com</a>
-        </p>
+        <div class="contact-details">
+          <p class="contact-data"><a href="tel:+97433731378" class="phone"><svg class="icon"><use xlink:href="#mobile" /></svg>+974 33 73 13 78</a>
+          <a href="mailto:g.gosden@mayowatersolutions.com" class="phone"><svg class="icon"><use xlink:href="#mail" /></svg>g.gosden@mayowatersolutions.com</a></p>
+          <!-- <a href="tel:00000000" class="phone">123456789</a>
+          <a href="mailto:g.gosden@mayowatersolutions.com" class="mail">g.gosden@mayowatersolutions.com</a> -->
+        </div>
         <span class="button margin-top with-text" data-letters="Read Bio">Read bio</span>
       </div>
       <div class="bio-details">
-        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://picsum.photos/450/250">
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="images/geoffx450.jpg" title="Geoff Gosden" alt="Geoff Gosden">
         <div class="bio-wrapper">
           <h3 class="bioname">Geoff Gosden</h3>
           <p class="details-position">

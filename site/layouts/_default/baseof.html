@@ -25,178 +25,38 @@
 
     </div>
   </div>
-    <script  src="app.js"></script>
-    <script src="barba/barba.js"></script>
+    <script async src="app.js"></script>
 
 
-<script>
-  var Homepage = Barba.BaseView.extend({
-  namespace: 'homepage',
-  onEnter: function() {
-      // The new Container is ready and attached to the DOM.
-  },
-  onEnterCompleted: function() {
-      // The Transition has just finished.
-    let width = window.innerWidth;
-
-    function loadVideo(width) {
-      let node = document.getElementById("videoWrap");
-      let video = document.createElement('video');
-      node.childNodes[1].classList.add("fade-out");
-
-      video.poster = "images/wave-poster.jpg";
-      video.src = "video/wave" + width + ".mp4";
-      // video.autoplay = true;
-      video.muted = true;
-      video.loop = true;
-      video.setAttribute("playsinline", "");
-      node.appendChild(video);
-      node.childNodes[1].style.display = "none";
-      let vid = document.querySelector("video");
-      vid.pause();
-      vid.play();
-    }
-    if (width >= 992 && width <= 1400) {
-      loadVideo(720);
-    } else if (width > 1400) {
-      loadVideo("");
-    }  
-  },
-  onLeave: function() {
-      // A new Transition toward a new page has just started.
-  },
-  onLeaveCompleted: function() {
-      // The Container has just been removed from the DOM.
-  }
-
-});
-
-// Don't forget to init the view!
-Homepage.init();
-</script>
-<script>
-  var Contact = Barba.BaseView.extend({
-  namespace: 'contact',
-
-  onEnter: function() {
-      // The new Container is ready and attached to the DOM.
-      window.google = {};
-      
-  },
-  onEnterCompleted: function() {
-      // The Transition has just finished.
-    if(document.getElementById('map') && document.getElementById('map').childElementCount == 0){
-      var a = function initMap() {
-        
-        var mws = {lat: 25.285447, lng: 51.53104};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: mws
-        });
-        var marker = new google.maps.Marker({
-          position: mws,
-          map: map
-        }); 
-      }
-      var scr = document.createElement("script");
-      var sc = document.createElement("script");
-      var bd = document.querySelector('body');
-      scr.text = a;
-      scr.id = "srcmap";
-      
-      if(!document.querySelector("#srcmap")){
-        bd.appendChild(scr);
-      }
-      sc.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAX9bhLzUrE6FcgbNg-Rqy7g6U0MqRTJ5A&callback=initMap";
-      
-      sc.id = "gmap";
-      bd.appendChild(sc);
-         
-	  }
-    
-  },
-  onLeave: function() {
-      // A new Transition toward a new page has just started.
-
-  },
-  onLeaveCompleted: function() {
-     
-      
-  }
-
-});
-Contact.init();
-</script>
 
 <script>
-  
-  Barba.Pjax.init();
-  Barba.Prefetch.init();
-  Barba.Dispatcher.on('newPageReady', function() {
+let width = window.innerWidth;
 
-    window.scrollTo(0,0);
+function loadVideo(width) {
+  let node = document.getElementById("videoWrap");
+  let video = document.createElement('video');
+  node.childNodes[1].classList.add("fade-out");
 
-  });
-  Barba.Dispatcher.on('transitionCompleted', function() {
-    
-});
+  video.poster = "images/wave-poster.jpg";
+  video.src = "video/wave" + width + ".mp4";
+  // video.autoplay = true;
+  video.muted = true;
+  video.loop = true;
+  video.setAttribute("playsinline", "");
+  node.appendChild(video);
+  node.childNodes[1].style.display = "none";
+  let vid = document.querySelector("video");
+  vid.pause();
+  vid.play();
+}
+if (width >= 992 && width <= 1400) {
+  loadVideo(720);
+} else if (width > 1400) {
+  loadVideo("");
+}
 </script>
-<script>
-  var FadeTransition = Barba.BaseTransition.extend({
-  start: function() {
 
-    
 
-    Promise
-      .all([this.newContainerLoading, this.fadeOut()])
-      .then(this.fadeIn.bind(this));
-  },
-
-  fadeOut: function() {
-    // this.style.background = 'red';
-  },
-  fadeIn: function() {
-
-    var _this = this;
-
-    var el = this.newContainer;
-    el.style.visibility = "hidden";
-    el.style.opacity = 0;
-    el.style.transition = "all .2s ease-in-out";
-    function sh(){
-      let el = document.querySelector(".barba-container");
-      el.style.opacity = 1;
-      el.style.transform = "scale(1)";
-    }
-    setTimeout(sh,100);
-    this.done();
-  }
-});
-
-/**
- * Next step, you have to tell Barba to use the new Transition
- */
-
-Barba.Pjax.getTransition = function() {
-  /**
-   * Here you can use your own logic!
-   * For example you can use different Transition based on the current page or link...
-   */
-
-  return FadeTransition;
-};
-</script>
-<style>
-
-  .faded{
-    opacity: 0;
-    transition:all .5s ease;
-  }
-  .faded1{
-    visibility: visible;
-    opacity:1;
-  }
-</style>
 
   </body>
   </html>
