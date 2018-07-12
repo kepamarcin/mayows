@@ -31,7 +31,7 @@ menu:
         <div class="bio-wrapper">
           <h3 class="bioname">Sam Murdock</h3>
           <p class="details-position">
-            Sam is the Managing Director of Mayo Projects.</p> 
+            Sam is the Managing Director of Mayo Water Solutions.</p> 
             <p>He has nearly 30 years of work experience as Director, Engineer and Project Manager in multi-disciplinary construction projects in Ireland, the UK, and Internationally. Prior to setting up his current company, Sam worked for multi-national world leading, engineering consultancy organizations, in the water sector.</p>
             <p class="">Sam has a wide range of expertise, specifically in the water and environment sector. He has managed projects such as WWTP, industrial water treatment, Water supply schemes, sludge, and many more. Key projects he has been involved in include:</p>
             <ul> 
@@ -72,7 +72,7 @@ menu:
         <div class="bio-wrapper">
           <h3 class="bioname">Geoff Gosden</h3>
           <p class="details-position">
-            Geoff is a Director of Mayo Projects.</p> 
+            Geoff is a Director of Mayo Water Solutions.</p> 
             <p>He has over 30 years experience as Director, Engineer and Project Manager in design, construction and operations in Australia, Scotland, India, Bulgaria and Qatar.</p>
             <p>Prior to setting up his current company, Geoff worked for multi-national world leading, engineering consultancies and an international water utility company.</p>
             <p class="">Geoff has a wide range of expertise across a range of disciplines and more specifically in the water and environment sector including operations.</p>
