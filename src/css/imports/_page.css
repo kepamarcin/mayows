@@ -489,9 +489,7 @@
     grid-gap: 10%;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
-    @media (--viewport-medium){
-
-    }
+    
   }
   .product-item{
     & img{
@@ -502,6 +500,10 @@
   
   .section-line{
     justify-content:center;
+    @media (--viewport-medium){
+      opacity:0;
+      visibility: hidden;
+    }
   }
    
 }
