@@ -20,7 +20,7 @@ menu:
       </p>
       <div class="contact">
         <div class="contact-details">
-          <p class="contact-data"><a href="tel:+97433731378" class="phone"><svg class="icon"><use xlink:href="#mobile" /></svg>+974 33 73 13 78</a>
+          <p class="contact-data"><a href="tel:+97433731378" class="phone"><svg class="icon"><use xlink:href="#mobile" /></svg>+974 33731378</a>
           <a href="mailto:s.murdock@mayowatersolutions.com" class="phone"><svg class="icon"><use xlink:href="#mail" /></svg>s.murdock@mayowatersolutions.com</a></p>
           <!-- <a href="mailto:s.murdock@mayowatersolutions.com" class="mail">s.murdock@mayowatersolutions.com</a> -->
         </div>
@@ -33,7 +33,7 @@ menu:
           <p class="details-position">
             Sam is the Managing Director of Mayo Projects.</p> 
             <p>He has nearly 30 years of work experience as Director, Engineer and Project Manager in multi-disciplinary construction projects in Ireland, the UK, and Internationally. Prior to setting up his current company, Sam worked for multi-national world leading, engineering consultancy organizations, in the water sector.</p>
-            <p class="">Sam has a wide range of expertise, specifically in the water and environment sector. He has overtaken projects such as WWTP, industrial water treatment, Water supply schemes, sludge, and many more. Key projects he has been involved in include:</p>
+            <p class="">Sam has a wide range of expertise, specifically in the water and environment sector. He has managed projects such as WWTP, industrial water treatment, Water supply schemes, sludge, and many more. Key projects he has been involved in include:</p>
             <ul> 
               <li>Al Khor Sewage Treatment Plant Extension, Qatar</li>
               <li> Mutton Island Waste Water Treatment works, Ireland</li>
@@ -60,7 +60,7 @@ menu:
       </p>
       <div class="contact">
         <div class="contact-details">
-          <p class="contact-data"><a href="tel:+97433731378" class="phone"><svg class="icon"><use xlink:href="#mobile" /></svg>+974 33 73 13 78</a>
+          <p class="contact-data"><a href="tel:+97455860156" class="phone"><svg class="icon"><use xlink:href="#mobile" /></svg>+974 55860156</a>
           <a href="mailto:g.gosden@mayowatersolutions.com" class="phone"><svg class="icon"><use xlink:href="#mail" /></svg>g.gosden@mayowatersolutions.com</a></p>
           <!-- <a href="tel:00000000" class="phone">123456789</a>
           <a href="mailto:g.gosden@mayowatersolutions.com" class="mail">g.gosden@mayowatersolutions.com</a> -->
