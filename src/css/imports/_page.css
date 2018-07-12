@@ -500,11 +500,14 @@
   
   .section-line{
     justify-content:center;
-    @media (--viewport-medium){
-      opacity:0;
-      visibility: hidden;
-    }
+    
   }
+  .section-line:not(.line-visible) {
+      @media (--viewport-medium){
+        opacity:0;
+        visibility: hidden;
+      }
+  } 
    
 }
 
