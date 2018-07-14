@@ -7,7 +7,7 @@
   }
   & h3{
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     color: color(var(--dark) lightness(85%));
     margin-bottom: var(--m)em;
   }

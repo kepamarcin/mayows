@@ -25,34 +25,7 @@
 
     {{if .IsHome}}
     
-    <script async defer>
-      let width = window.innerWidth;
-      function loadVideo(width) {
-        let node = document.getElementById("videoWrap");
-        let video = document.createElement('video');
-        node.childNodes[1].classList.add("fade-out");
-    
-    
-        video.poster = "images/wave-poster.jpg";
-        video.src = "video/wave" + width + ".mp4";
-        // video.autoplay = true;
-        video.muted = true;
-        video.loop = true;
-        video.setAttribute("playsinline", "");
-        node.appendChild(video);
-        node.childNodes[1].style.display = "none";
-        let vid = document.querySelector("video");
-        vid.pause();
-        vid.play();
-    
-      }
-      if (width >= 992 && width <= 1400) {
-        loadVideo(720);
-      } else if (width > 1400) {
-        loadVideo("");
-      }
-    </script>
-    
+    <script src="video.js" async ></script>
     {{end}}
   </body>
   </html>

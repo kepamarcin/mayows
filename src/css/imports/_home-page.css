@@ -4,7 +4,6 @@
 }
 .section-header{
   font-size: var(--m4)em;
-  font-family: lingua franca;
   letter-spacing:-0.02em;
 
   
@@ -21,7 +20,6 @@ h2:not(.product-name), h3:not(.product-name, .name, .bioname), h4:not(.product-n
 }
 .section-text{
   font-size:1.125em;
-  font-family: autor;
   line-height: var(--m2);
   display: flex;
   flex-direction:column;
@@ -56,7 +54,6 @@ h2:not(.product-name), h3:not(.product-name, .name, .bioname), h4:not(.product-n
     }
 }
 .products-headline{
-  font-family:var(--font-serif);
   width: 100%;
   margin-bottom: var(--m4)em;
   font-size:var(--m4)em;

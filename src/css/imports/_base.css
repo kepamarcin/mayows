@@ -4,7 +4,8 @@
 } */
 body{
   /* font-family: var(--font-system); */
-  font-family: var(--font-sans);
+  /* font-family: var(--font-sans); */
+  font-family: var(--font-system);
   font-size: var(--font-size-base);
   background: color(var(--dark) lightness(97%));
   color: var(--dark);
@@ -12,36 +13,35 @@ body{
   text-rendering: optimizespeed;
 }
 .fonts-stage-1 body{
-  font-family: var(--font-serif-optimized);
+  font-family: var(--font-sans-optimized);
 }
-.fonts-stage-2 body{
-  font-family: var(--font-serif);
-}
+/* .fonts-stage-2 body{
+  font-family: var(--font-sans);
+} */
 :--headings{
   color:var(--dark-blue);
   font-weight: var(--font-weight-bold);
-  font-family: var(--font-system);
-  font-family: var(--font-sans);
+  /* font-family: var(--font-system);
+  font-family: var(--font-sans); */
   margin:0;
   padding: 0;
   margin: 1.414em 0 0.5em;
   line-height: 1.2;
 }
-p{
+/* p{
   font-family: var(--font-serif);
-}
+} */
 .fonts-stage-2{
-  & :--headings, & .section span, & .contact-data a, & .footer p, & .aside, & .menu li{
+  /* & :--headings, & .section span, & .contact-data a, & .footer p, & .aside, & .menu li a{
+    font-family: var(--font-sans);
+  } */
+  & body{
     font-family: var(--font-sans);
   }
-  & .branding-name{
+  & .header-content p, & .main-content h3, & .products-headline, & .details-position{
     font-family: var(--font-serif);
   }
-  @media (--viewport-medium){
-    & .menu li{
-      font-family: var(--font-serif);
-    }
-  }
+
 }
 .big-text{font-size: 6.2em} 
 h1 {font-size:var(--m4)em}

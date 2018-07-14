@@ -1,4 +1,4 @@
-<!--<script>
+<script>
   (function() {
   
     //Optimization for Repeat Views
@@ -16,25 +16,30 @@
   g=n.a.offsetWidth,h=p.a.offsetWidth,u();q=setTimeout(I,50)}}var e=new r(k),n=new r(k),p=new r(k),f=-1,g=-1,h=-1,v=-1,w=-1,x=-1,d=document.createElement("div");d.dir="ltr";t(e,L(c,"sans-serif"));t(n,L(c,"serif"));t(p,L(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);v=e.a.offsetWidth;w=n.a.offsetWidth;x=p.a.offsetWidth;I();z(e,function(a){f=a;u()});t(e,L(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;u()});t(n,L(c,'"'+c.family+'",serif'));
   z(p,function(a){h=a;u()});t(p,L(c,'"'+c.family+'",monospace'))})})};"object"===typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
   
-    var fontASubset = new FontFaceObserver('pt serif opt');
+    var fontASubset = new FontFaceObserver('atm');
   
     Promise.all([fontASubset.load()]).then(function () {
       document.documentElement.className += " fonts-stage-1";
   
-      var fontA = new FontFaceObserver('pt serif', {
-          weight: 700
+      var fontA = new FontFaceObserver('autor', {
+          weight: 500
         });
-      var fontB = new FontFaceObserver('pt serif');
+      var fontB = new FontFaceObserver('autor', {
+          weight: 600
+        });
   
-      var fontC = new FontFaceObserver('open sans', {
-          style: 'normal'
+      var fontC = new FontFaceObserver('autor', {
+          weight: 400
         });
-      var fontD = new FontFaceObserver('open sans', {
-          weight: 800
+      var fontD = new FontFaceObserver('lingua franca', {
+          weight: 400
         });
+        var fontE = new FontFaceObserver('lingua franca', {
+          weight: 700
+        });  
     
   
-      Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load()]).then(function () {
+      Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load()]).then(function () {
         document.documentElement.className += " fonts-stage-2";
   
         // Optimization for Repeat Views
@@ -42,4 +47,4 @@
       });
     });
   })();
-  </script>-->
+  </script>

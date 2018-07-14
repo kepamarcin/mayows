@@ -56,8 +56,8 @@
     margin-bottom:calc(var(--m)/8)em ;
     text-align: center;
     & span{
-      font-weight: 300;
-      font-size: 30px;
+      font-weight: 400;
+      font-size: 28px;
       text-align: left;
     }
     color:color(var(--dark-blue) lightness(99%));
@@ -66,7 +66,7 @@
       text-align: left;
       
       & span{
-        font-size: 48px; 
+        font-size: 44px; 
       }
     }
     @media(--viewport-large){
@@ -78,11 +78,9 @@
   }
   & .title-description{
     font-size: calc(var(--m4)/2)em ;
-    font-family: var(--font-sans);
     color: var(--white);
     @media(--viewport-medium){
       width:75%;
-      /* color: var(--dark); */
     }
     @media(--viewport-large){
       width:75%;
@@ -91,7 +89,6 @@
   }
   & .lead-container{
     text-align:left;
-    /* font-size: var(--m)em; */
     font-style:normal;
     margin:var(--m4)em 0;
     @media (--viewport-medium){
@@ -101,19 +98,16 @@
 
     & p{
       font-size: 17px;
-      font-family: var(--font-sans);
       font-weight:400;
     }
   }
   & .main-content h3{
-    font-family:"lingua franca";
     font-size: 2.0736em;
     letter-spacing: -0.02em;
 
   }
   & .main-content p{
     font-size: 1.125em;
-    font-family:autor;
     
   }
   & .main-content ul{
@@ -272,7 +266,6 @@
       }
     }
   & .details-position{
-    font-family:var(--font-serif);
     color:var(--dark-blue);
     font-weight:600;
   }
@@ -284,7 +277,6 @@
   margin-bottom:2em;
 }
 #buy.product-button{
-  /* color: color(var(--blue) blackness(10%)); */
   color: var(--blue) ;
   font-weight:600;
 }
@@ -466,8 +458,6 @@
    display: block;
    display: flex;
    align-items: center;
-   font-family:var(--font-system);
-   font-family:var(--font-sans);
    color:var(--dark);
    flex-wrap:wrap;
    & svg{
