@@ -6,7 +6,7 @@
 /
   Link: <{{ "css/main.css" | relURL }}>; rel=preload; as=style
   Link: <{{ "images/wave-poster.jpg" | relURL }}>; rel=preload; as=image
-  Link: <{{ "fonts/autor%20medium.woff2" | relURL }}>; rel=preload; as=font
+  Link: <{{ "fonts/atm.woff2" | relURL }}>; rel=preload; as=font
 /images/*
   Cache-Control: public, max-age=1000
 /css/*
