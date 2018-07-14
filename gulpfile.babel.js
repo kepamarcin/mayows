@@ -55,10 +55,10 @@ gulp.task("build-preview", ["css", "js", "fonts", "images"], (cb) => buildSite(c
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
     .pipe(plumber())
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
-    .pipe(sourcemaps.write('.'))
-    // .pipe(cssnano())
+    // .pipe(sourcemaps.write('.'))
+    .pipe(cssnano())
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
